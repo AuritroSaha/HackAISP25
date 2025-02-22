@@ -1,0 +1,91 @@
+Name,Fuel Type,Drivetrain,Transmission Type,Origin,Horsepower (hp),Cylinders,Displacement (cc),Weight (lbs),Acceleration (0-60 mph in s),Model Year,Top Speed (mph),Wheelbase (mm),Track Width (mm),Ground Clearance (mm),Drag Coefficient,Spoiler/Wing Type,Frontal Area (m²),Lift Coefficient,Underbody Aero,Grille Type,Air Vent Type,Roofline Slope (degrees),Side Mirror Type
+Tesla Model S,Electric,AWD,Automatic,USA,1020,0,0,4941,2.4,2021,200,2960,166,144,0.24,Active,2.10,-0.03,Exposed,Closed,Active Aerodynamics,17.5,Camera-Based
+Toyota Corolla,Gasoline,FWD,CVT,Japan,139,4,1798,2910,8.2,2021,112,2700,153,150,0.28,None,2.16,0.10,Flat,Open,Side Vents,15.0,Standard
+Ford F-150,Gasoline,4WD,Automatic,USA,400,6,3500,4050,6.0,2021,120,3100,170,221,0.40,Standard,3.00,0.15,Venturi,Mesh,Active Aerodynamics,30.0,Aerodynamic
+Honda Civic,Gasoline,FWD,CVT,Japan,158,4,2000,2762,7.8,2021,125,2735,154,140,0.27,None,2.10,0.05,Diffuser-equipped,Closed,Side Vents,25.0,Standard
+BMW M3,Gasoline,RWD,Dual-Clutch,Germany,473,6,3000,3825,3.8,2021,155,2851,157,120,0.26,Standard,2.20,0.08,Flat,Mesh,Active Aerodynamics,20.0,Aerodynamic
+Mercedes-Benz S-Class,Hybrid,AWD,Automatic,Germany,429,6,3000,4675,4.5,2021,130,3216,165,130,0.27,None,2.25,0.07,Diffuser-equipped,Closed,Hood Vents,22.0,Standard
+Chevrolet Silverado,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.0,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Audi A4,Gasoline,AWD,Automatic,Germany,201,4,1984,3461,6.3,2021,135,2850,155,135,0.30,None,2.16,0.09,Diffuser-equipped,Closed,Active Aerodynamics,24.0,Standard
+Nissan Leaf,Electric,FWD,Automatic,Japan,147,0,0,3156,7.9,2021,105,2650,150,140,0.32,Active,2.00,-0.01,Exposed,Open,Side Vents,18.0,Camera-Based
+Subaru Outback,Gasoline,AWD,CVT,Japan,182,4,2500,3678,8.7,2021,118,2900,158,170,0.33,Standard,2.20,0.04,Flat,Mesh,Hood Vents,27.0,Standard
+Porsche 911,Gasoline,RWD,Automatic,Germany,473,6,3000,3800,3.9,2021,165,2820,160,130,0.25,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,19.0,Aerodynamic
+Volkswagen Golf,Gasoline,FWD,Manual,Germany,170,4,1600,3000,8.5,2021,110,2650,150,140,0.29,None,2.10,0.10,Flat,Open,Hood Vents,23.0,Standard
+Hyundai Elantra,Gasoline,FWD,CVT,South Korea,147,4,1600,2800,8.0,2021,115,2700,152,145,0.31,None,2.12,0.08,Diffuser-equipped,Closed,Side Vents,24.0,Standard
+Jeep Wrangler,Gasoline,4WD,Manual,USA,285,6,3500,3500,6.8,2021,105,2900,160,250,0.38,Standard,2.50,0.20,Venturi,Mesh,Active Aerodynamics,35.0,Aerodynamic
+Lexus RX,Hybrid,AWD,Automatic,Japan,308,6,3000,4500,7.2,2021,115,2950,158,140,0.30,None,2.30,0.05,Flat,Closed,Hood Vents,21.0,Standard
+Mazda CX-5,Gasoline,AWD,Automatic,Japan,250,4,2300,3500,7.9,2021,120,2800,155,160,0.33,Standard,2.18,0.06,Diffuser-equipped,Open,Side Vents,26.0,Standard
+Volvo XC90,Hybrid,AWD,Automatic,Sweden,455,6,3200,5000,6.5,2021,125,3100,165,150,0.35,None,2.40,0.02,Flat,Closed,Active Aerodynamics,20.0,Standard
+Dodge Charger,Gasoline,RWD,Automatic,USA,292,6,3000,3800,5.9,2021,140,3000,160,130,0.34,Standard,2.22,0.05,Diffuser-equipped,Mesh,Side Vents,23.0,Standard
+GMC Sierra,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.2,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Chevrolet Camaro,Gasoline,RWD,Manual,USA,335,8,4200,3700,4.9,2021,155,2900,160,140,0.31,None,2.00,0.03,Diffuser-equipped,Closed,Hood Vents,20.0,Aerodynamic
+Kia Telluride,Gasoline,AWD,Automatic,South Korea,291,6,3200,4200,7.1,2021,125,3000,165,180,0.36,Standard,2.30,0.04,Flat,Mesh,Side Vents,22.0,Standard
+Honda Accord,Hybrid,FWD,CVT,Japan,204,4,2000,3200,7.6,2021,120,2750,155,145,0.29,None,2.15,0.05,Diffuser-equipped,Closed,Hood Vents,24.0,Standard
+Ford Mustang,Gasoline,RWD,Manual,USA,450,8,5000,3700,4.5,2021,160,2850,158,130,0.27,Active,2.05,0.02,Flat,Open,Side Vents,21.0,Aerodynamic
+Jaguar F-Type,Gasoline,RWD,Automatic,UK,444,8,4800,3500,3.7,2021,155,2800,160,120,0.26,Standard,2.10,0.00,Diffuser-equipped,Closed,Active Aerodynamics,19.0,Standard
+Land Rover Defender,Gasoline,4WD,Automatic,UK,395,6,3500,4200,7.8,2021,110,3000,165,210,0.38,None,2.30,0.07,Venturi,Mesh,Hood Vents,27.0,Aerodynamic
+Toyota Prius,Hybrid,FWD,CVT,Japan,121,4,2400,4192,13.9,2021,146,3059,151,250,0.39,Standard,2.33,0.12,Flat,Closed,Hood Vents,38.3,Camera-Based
+Tesla Model X,Electric,AWD,Automatic,USA,1020,0,0,5689,2.7,2021,153,3144,1449,226,0.26,Active,2.25,-0.02,Exposed,Closed,Active Aerodynamics,18.0,Camera-Based
+Lamborghini Huracan,Gasoline,AWD,Dual-Clutch,Italy,631,10,5200,3300,2.9,2021,205,2700,165,110,0.28,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,15.0,Aerodynamic
+Ferrari 488,Gasoline,RWD,Dual-Clutch,Italy,661,8,3900,3300,3.0,2021,205,2680,160,120,0.27,None,2.10,0.02,Flat,Mesh,Hood Vents,16.0,Aerodynamic
+McLaren 720S,Gasoline,RWD,Dual-Clutch,UK,710,8,4000,3100,2.8,2021,210,2650,158,110,0.25,Active,2.05,0.00,Diffuser-equipped,Closed,Active Aerodynamics,15.5,Aerodynamic
+Tesla Model S,Electric,AWD,Automatic,USA,1020,0,0,4941,2.4,2021,200,2960,166,144,0.24,Active,2.10,-0.03,Exposed,Closed,Active Aerodynamics,17.5,Camera-Based
+Toyota Corolla,Gasoline,FWD,CVT,Japan,139,4,1798,2910,8.2,2021,112,2700,153,150,0.28,None,2.16,0.10,Flat,Open,Side Vents,15.0,Standard
+Ford F-150,Gasoline,4WD,Automatic,USA,400,6,3500,4050,6.0,2021,120,3100,170,221,0.40,Standard,3.00,0.15,Venturi,Mesh,Active Aerodynamics,30.0,Aerodynamic
+Honda Civic,Gasoline,FWD,CVT,Japan,158,4,2000,2762,7.8,2021,125,2735,154,140,0.27,None,2.10,0.05,Diffuser-equipped,Closed,Side Vents,25.0,Standard
+BMW M3,Gasoline,RWD,Dual-Clutch,Germany,473,6,3000,3825,3.8,2021,155,2851,157,120,0.26,Standard,2.20,0.08,Flat,Mesh,Active Aerodynamics,20.0,Aerodynamic
+Mercedes-Benz S-Class,Hybrid,AWD,Automatic,Germany,429,6,3000,4675,4.5,2021,130,3216,165,130,0.27,None,2.25,0.07,Diffuser-equipped,Closed,Hood Vents,22.0,Standard
+Chevrolet Silverado,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.0,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Audi A4,Gasoline,AWD,Automatic,Germany,201,4,1984,3461,6.3,2021,135,2850,155,135,0.30,None,2.16,0.09,Diffuser-equipped,Closed,Active Aerodynamics,24.0,Standard
+Nissan Leaf,Electric,FWD,Automatic,Japan,147,0,0,3156,7.9,2021,105,2650,150,140,0.32,Active,2.00,-0.01,Exposed,Open,Side Vents,18.0,Camera-Based
+Subaru Outback,Gasoline,AWD,CVT,Japan,182,4,2500,3678,8.7,2021,118,2900,158,170,0.33,Standard,2.20,0.04,Flat,Mesh,Hood Vents,27.0,Standard
+Porsche 911,Gasoline,RWD,Automatic,Germany,473,6,3000,3800,3.9,2021,165,2820,160,130,0.25,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,19.0,Aerodynamic
+Volkswagen Golf,Gasoline,FWD,Manual,Germany,170,4,1600,3000,8.5,2021,110,2650,150,140,0.29,None,2.10,0.10,Flat,Open,Hood Vents,23.0,Standard
+Hyundai Elantra,Gasoline,FWD,CVT,South Korea,147,4,1600,2800,8.0,2021,115,2700,152,145,0.31,None,2.12,0.08,Diffuser-equipped,Closed,Side Vents,24.0,Standard
+Jeep Wrangler,Gasoline,4WD,Manual,USA,285,6,3500,3500,6.8,2021,105,2900,160,250,0.38,Standard,2.50,0.20,Venturi,Mesh,Active Aerodynamics,35.0,Aerodynamic
+Lexus RX,Hybrid,AWD,Automatic,Japan,308,6,3000,4500,7.2,2021,115,2950,158,140,0.30,None,2.30,0.05,Flat,Closed,Hood Vents,21.0,Standard
+Mazda CX-5,Gasoline,AWD,Automatic,Japan,250,4,2300,3500,7.9,2021,120,2800,155,160,0.33,Standard,2.18,0.06,Diffuser-equipped,Open,Side Vents,26.0,Standard
+Volvo XC90,Hybrid,AWD,Automatic,Sweden,455,6,3200,5000,6.5,2021,125,3100,165,150,0.35,None,2.40,0.02,Flat,Closed,Active Aerodynamics,20.0,Standard
+Dodge Charger,Gasoline,RWD,Automatic,USA,292,6,3000,3800,5.9,2021,140,3000,160,130,0.34,Standard,2.22,0.05,Diffuser-equipped,Mesh,Side Vents,23.0,Standard
+GMC Sierra,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.2,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Chevrolet Camaro,Gasoline,RWD,Manual,USA,335,8,4200,3700,4.9,2021,155,2900,160,140,0.31,None,2.00,0.03,Diffuser-equipped,Closed,Hood Vents,20.0,Aerodynamic
+Kia Telluride,Gasoline,AWD,Automatic,South Korea,291,6,3200,4200,7.1,2021,125,3000,165,180,0.36,Standard,2.30,0.04,Flat,Mesh,Side Vents,22.0,Standard
+Honda Accord,Hybrid,FWD,CVT,Japan,204,4,2000,3200,7.6,2021,120,2750,155,145,0.29,None,2.15,0.05,Diffuser-equipped,Closed,Hood Vents,24.0,Standard
+Ford Mustang,Gasoline,RWD,Manual,USA,450,8,5000,3700,4.5,2021,160,2850,158,130,0.27,Active,2.05,0.02,Flat,Open,Side Vents,21.0,Aerodynamic
+Jaguar F-Type,Gasoline,RWD,Automatic,UK,444,8,4800,3500,3.7,2021,155,2800,160,120,0.26,Standard,2.10,0.00,Diffuser-equipped,Closed,Active Aerodynamics,19.0,Standard
+Land Rover Defender,Gasoline,4WD,Automatic,UK,395,6,3500,4200,7.8,2021,110,3000,165,210,0.38,None,2.30,0.07,Venturi,Mesh,Hood Vents,27.0,Aerodynamic
+Toyota Prius,Hybrid,FWD,CVT,Japan,121,4,2400,4192,13.9,2021,146,3059,151,250,0.39,Standard,2.33,0.12,Flat,Closed,Hood Vents,38.3,Camera-Based
+Tesla Model X,Electric,AWD,Automatic,USA,1020,0,0,5689,2.7,2021,153,3144,1449,226,0.26,Active,2.25,-0.02,Exposed,Closed,Active Aerodynamics,18.0,Camera-Based
+Lamborghini Huracan,Gasoline,AWD,Dual-Clutch,Italy,631,10,5200,3300,2.9,2021,205,2700,165,110,0.28,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,15.0,Aerodynamic
+Ferrari 488,Gasoline,RWD,Dual-Clutch,Italy,661,8,3900,3300,3.0,2021,205,2680,160,120,0.27,None,2.10,0.02,Flat,Mesh,Hood Vents,16.0,Aerodynamic
+McLaren 720S,Gasoline,RWD,Dual-Clutch,UK,710,8,4000,3100,2.8,2021,210,2650,158,110,0.25,Active,2.05,0.00,Diffuser-equipped,Closed,Active Aerodynamics,15.5,Aerodynamic
+Tesla Model S,Electric,AWD,Automatic,USA,1020,0,0,4941,2.4,2021,200,2960,166,144,0.24,Active,2.10,-0.03,Exposed,Closed,Active Aerodynamics,17.5,Camera-Based
+Toyota Corolla,Gasoline,FWD,CVT,Japan,139,4,1798,2910,8.2,2021,112,2700,153,150,0.28,None,2.16,0.10,Flat,Open,Side Vents,15.0,Standard
+Ford F-150,Gasoline,4WD,Automatic,USA,400,6,3500,4050,6.0,2021,120,3100,170,221,0.40,Standard,3.00,0.15,Venturi,Mesh,Active Aerodynamics,30.0,Aerodynamic
+Honda Civic,Gasoline,FWD,CVT,Japan,158,4,2000,2762,7.8,2021,125,2735,154,140,0.27,None,2.10,0.05,Diffuser-equipped,Closed,Side Vents,25.0,Standard
+BMW M3,Gasoline,RWD,Dual-Clutch,Germany,473,6,3000,3825,3.8,2021,155,2851,157,120,0.26,Standard,2.20,0.08,Flat,Mesh,Active Aerodynamics,20.0,Aerodynamic
+Mercedes-Benz S-Class,Hybrid,AWD,Automatic,Germany,429,6,3000,4675,4.5,2021,130,3216,165,130,0.27,None,2.25,0.07,Diffuser-equipped,Closed,Hood Vents,22.0,Standard
+Chevrolet Silverado,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.0,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Audi A4,Gasoline,AWD,Automatic,Germany,201,4,1984,3461,6.3,2021,135,2850,155,135,0.30,None,2.16,0.09,Diffuser-equipped,Closed,Active Aerodynamics,24.0,Standard
+Nissan Leaf,Electric,FWD,Automatic,Japan,147,0,0,3156,7.9,2021,105,2650,150,140,0.32,Active,2.00,-0.01,Exposed,Open,Side Vents,18.0,Camera-Based
+Subaru Outback,Gasoline,AWD,CVT,Japan,182,4,2500,3678,8.7,2021,118,2900,158,170,0.33,Standard,2.20,0.04,Flat,Mesh,Hood Vents,27.0,Standard
+Porsche 911,Gasoline,RWD,Automatic,Germany,473,6,3000,3800,3.9,2021,165,2820,160,130,0.25,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,19.0,Aerodynamic
+Volkswagen Golf,Gasoline,FWD,Manual,Germany,170,4,1600,3000,8.5,2021,110,2650,150,140,0.29,None,2.10,0.10,Flat,Open,Hood Vents,23.0,Standard
+Hyundai Elantra,Gasoline,FWD,CVT,South Korea,147,4,1600,2800,8.0,2021,115,2700,152,145,0.31,None,2.12,0.08,Diffuser-equipped,Closed,Side Vents,24.0,Standard
+Jeep Wrangler,Gasoline,4WD,Manual,USA,285,6,3500,3500,6.8,2021,105,2900,160,250,0.38,Standard,2.50,0.20,Venturi,Mesh,Active Aerodynamics,35.0,Aerodynamic
+Lexus RX,Hybrid,AWD,Automatic,Japan,308,6,3000,4500,7.2,2021,115,2950,158,140,0.30,None,2.30,0.05,Flat,Closed,Hood Vents,21.0,Standard
+Mazda CX-5,Gasoline,AWD,Automatic,Japan,250,4,2300,3500,7.9,2021,120,2800,155,160,0.33,Standard,2.18,0.06,Diffuser-equipped,Open,Side Vents,26.0,Standard
+Volvo XC90,Hybrid,AWD,Automatic,Sweden,455,6,3200,5000,6.5,2021,125,3100,165,150,0.35,None,2.40,0.02,Flat,Closed,Active Aerodynamics,20.0,Standard
+Dodge Charger,Gasoline,RWD,Automatic,USA,292,6,3000,3800,5.9,2021,140,3000,160,130,0.34,Standard,2.22,0.05,Diffuser-equipped,Mesh,Side Vents,23.0,Standard
+GMC Sierra,Gasoline,4WD,Automatic,USA,355,8,5300,4500,7.2,2021,115,3340,171,220,0.42,Standard,3.10,0.12,Flat,Open,Side Vents,28.0,Standard
+Chevrolet Camaro,Gasoline,RWD,Manual,USA,335,8,4200,3700,4.9,2021,155,2900,160,140,0.31,None,2.00,0.03,Diffuser-equipped,Closed,Hood Vents,20.0,Aerodynamic
+Kia Telluride,Gasoline,AWD,Automatic,South Korea,291,6,3200,4200,7.1,2021,125,3000,165,180,0.36,Standard,2.30,0.04,Flat,Mesh,Side Vents,22.0,Standard
+Honda Accord,Hybrid,FWD,CVT,Japan,204,4,2000,3200,7.6,2021,120,2750,155,145,0.29,None,2.15,0.05,Diffuser-equipped,Closed,Hood Vents,24.0,Standard
+Ford Mustang,Gasoline,RWD,Manual,USA,450,8,5000,3700,4.5,2021,160,2850,158,130,0.27,Active,2.05,0.02,Flat,Open,Side Vents,21.0,Aerodynamic
+Jaguar F-Type,Gasoline,RWD,Automatic,UK,444,8,4800,3500,3.7,2021,155,2800,160,120,0.26,Standard,2.10,0.00,Diffuser-equipped,Closed,Active Aerodynamics,19.0,Standard
+Land Rover Defender,Gasoline,4WD,Automatic,UK,395,6,3500,4200,7.8,2021,110,3000,165,210,0.38,None,2.30,0.07,Venturi,Mesh,Hood Vents,27.0,Aerodynamic
+Toyota Prius,Hybrid,FWD,CVT,Japan,121,4,2400,4192,13.9,2021,146,3059,151,250,0.39,Standard,2.33,0.12,Flat,Closed,Hood Vents,38.3,Camera-Based
+Tesla Model X,Electric,AWD,Automatic,USA,1020,0,0,5689,2.7,2021,153,3144,1449,226,0.26,Active,2.25,-0.02,Exposed,Closed,Active Aerodynamics,18.0,Camera-Based
+Lamborghini Huracan,Gasoline,AWD,Dual-Clutch,Italy,631,10,5200,3300,2.9,2021,205,2700,165,110,0.28,Active,2.00,0.00,Diffuser-equipped,Closed,Side Vents,15.0,Aerodynamic
+Ferrari 488,Gasoline,RWD,Dual-Clutch,Italy,661,8,3900,3300,3.0,2021,205,2680,160,120,0.27,None,2.10,0.02,Flat,Mesh,Hood Vents,16.0,Aerodynamic
+McLaren 720S,Gasoline,RWD,Dual-Clutch,UK,710,8,4000,3100,2.8,2021,210,2650,158,110,0.25,Active,2.05,0.00,Diffuser-equipped,Closed,Active Aerodynamics,15.5,Aerodynamic
