@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Prediction Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Car Performance Predictor</h2>
+    
+    <label for="feature1">Feature 1:</label>
+    <input type="number" id="feature1" placeholder="Enter feature 1">
+
+    <label for="feature2">Feature 2:</label>
+    <input type="number" id="feature2" placeholder="Enter feature 2">
+
+    <label for="feature3">Feature 3:</label>
+    <input type="number" id="feature3" placeholder="Enter feature 3">
+
+    <!-- Add more inputs as needed -->
+    
+    <button onclick="getPrediction()">Predict</button>
+
+    <div class="results">
+        <h3>Predicted Values:</h3>
+        <p><strong>Drag Coefficient:</strong> <span id="drag_coefficient"></span></p>
+        <p><strong>MPG:</strong> <span id="mpg"></span></p>
+        <p><strong>Horsepower:</strong> <span id="horsepower"></span></p>
+        <p><strong>Torque:</strong> <span id="torque"></span></p>
+        <p><strong>Price:</strong> <span id="price"></span></p>
+        <p><strong>Weight:</strong> <span id="weight"></span></p>
+    </div>
+</div>
+
+<script>
+    function getPrediction() {
+        let feature1 = document.getElementById("feature1").value;
+        let feature2 = document.getElementById("feature2").value;
+        let feature3 = document.getElementById("feature3").value;
+
+        fetch("http://127.0.0.1:5000/predict", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                feature1: parseFloat(feature1),
+                feature2: parseFloat(feature2),
+                feature3: parseFloat(feature3)
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("drag_coefficient").innerText = data.drag_coefficient;
+            document.getElementById("mpg").innerText = data.mpg;
+            document.getElementById("horsepower").innerText = data.horsepower;
+            document.getElementById("torque").innerText = data.torque;
+            document.getElementById("price").innerText = data.price;
+            document.getElementById("weight").innerText = data.weight;
+        })
+        .catch(error => console.error("Error:", error));
+    }
+</script>
+
+</body>
+</html>
