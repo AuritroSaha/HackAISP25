@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset (replace with actual file path)
-df = pd.read_csv("Dataset/dataGen.csv")
+df = pd.read_csv("Datasets/dataGen.csv")
 
 # Display the first few rows
 print(df.head())
@@ -70,4 +70,26 @@ y_pred = xgb_model.predict(X_test)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 print(f"Model RMSE: {rmse}")
 
+
+#hypertune
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {
+    "n_estimators": [100, 200, 300],
+    "max_depth": [3, 6, 9],
+    "learning_rate": [0.01, 0.1, 0.3],
+    "subsample": [0.8, 1.0],
+    "colsample_bytree": [0.8, 1.0]
+}
+
+grid_search = GridSearchCV(
+    estimator=xgb.XGBRegressor(objective="reg:squarederror"),
+    param_grid=param_grid,
+    scoring="neg_mean_squared_error",
+    cv=3
+)
+
+grid_search.fit(X_train, y_train)
+
+print("Best Hyperparameters:", grid_search.best_params_)
 
