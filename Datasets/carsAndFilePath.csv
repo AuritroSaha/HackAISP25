@@ -1,1 +1,31 @@
 model,filePath
+Tesla Model S, Datasets/carImages/teslaModelS.avif
+Toyota Corolla, Datasets/carImages/toyotaCorolla.avif
+Ford F150, Datasets/carImages/fordF150.avif
+Honda Civic, Datasets/carImages/hondaCivic.avif
+BMW M3, Datasets/carImages/bMWM3.webp
+Mercedes-Benz S-Class, Datasets/carImages/mercedesBenzeS-Class.webp
+Chevrolet Silverado, Datasets/carImages/chevroletSilverado.webp
+Audi A4, Datasets/carImages/audiA4.avif
+Nissan Leaf, Datasets/carImages/nissanLeaf.png
+Subaru Outback, Datasets/carImages/subaruOutback.png
+Porsche 911, Datasets/carImages/porsche911.png
+Volkswagen Golf, Datasets/carImages/volkswagenGolf.avif
+Hyundai Elantra, Datasets/carImages/hyundaiElantra.webp
+Jeep Wrangler, Datasets/carImages/jeepWrangler.avif
+Lexus RX, Datasets/carImages/lexusRX.avif
+Mazda CX-5, Datasets/carImages/mazdaCX-5.jpeg
+Volvo XC90, Datasets/carImages/volvoXC90.webp
+Dodge Charger, Datasets/carImages/dodgeCharger.png
+GMC Sierra, Datasets/carImages/gmcSierra.avif
+Chevrolet Camaro, Datasets/carImages/chevroletCamaro.png
+Kia Telluride, Datasets/carImages/kiaTelluride.png
+Honda Accord, Datasets/carImages/hondaAccord.avif
+Ford Mustang, Datasets/carImages/fordMustang.avif
+Jaguar F-Type, Datasets/carImages/jaguarF-Type.avif
+Land Rover Defender, Datasets/carImages/landRoverDefender.webp
+Toyota Prius, Datasets/carImages/toyotaPrius.avif
+Tesla Model X, Datasets/carImages/teslaModelX.webp
+Lamborghini Huracan, Datasets/carImages/lamborghiniHuracan.png
+Ferrari 488, Datasets/carImages/ferrari488.png
+Mclaren 720S, Datasets/carImages/mclaren720S.avif
