@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torque Predictor</title>
+    <title>MPG Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,11 +29,12 @@
             border: 1px solid #ccc;
         }
         button {
-            background-color: #17a2b8;
+            background-color: #28a745;
             color: white;
+            border: none;
             cursor: pointer;
         }
-        button:hover { background-color: #138496; }
+        button:hover { background-color: #218838; }
         .results {
             margin-top: 20px;
             padding: 15px;
@@ -53,15 +54,14 @@
             cursor: pointer;
             text-decoration: none;
         }
-        .back-button:hover {
-            background-color: #555;
-        }
+        .back-button:hover { background-color: #555; }
     </style>
 </head>
 <body>
     <a href="cardicter.html" class="back-button">Go Back</a>
+
     <div class="container">
-        <h2>Torque Predictor</h2>
+        <h2>MPG Predictor</h2>
 
         <label>Upload CSV File:</label>
         <input type="file" id="csvFileInput" accept=".csv">
@@ -75,14 +75,11 @@
         <label>Company:</label>
         <input type="text" id="company">
 
-        <label>Weight (lbs):</label>
+        <label>Weight (kg):</label>
         <input type="number" id="weight">
 
-        <label>MPG:</label>
-        <input type="number" id="mpg">
-
-        <label>Engine Size (L):</label>
-        <input type="number" id="engineSize">
+        <label>Volume (cc):</label>
+        <input type="number" id="volume">
 
         <label>Cylinders:</label>
         <input type="number" id="cylinders">
@@ -99,6 +96,9 @@
         <label>Engine:</label>
         <input type="text" id="engine">
 
+        <label>Engine Size (L):</label>
+        <input type="number" id="engineSize">
+
         <label>Vehicle Class:</label>
         <input type="text" id="vehicleClass">
 
@@ -107,6 +107,9 @@
 
         <label>Horsepower:</label>
         <input type="number" id="horsepower">
+
+        <label>Torque (Nm):</label>
+        <input type="number" id="torque">
 
         <label>Price ($):</label>
         <input type="number" id="price">
@@ -117,14 +120,14 @@
         <button onclick="getPrediction()">Predict</button>
 
         <div class="results">
-            <h3>Predicted Torque (Nm):</h3>
-            <p><strong><span id="torque_pred"></span></strong></p>
+            <h3>Predicted MPG:</h3>
+            <p><strong><span id="mpg_pred"></span></strong></p>
         </div>
     </div>
 
     <script>
         function getPrediction() {
-            document.getElementById("torque_pred").innerText = "350"; // placeholder prediction
+            document.getElementById("mpg_pred").innerText = document.getElementById("mpg").value; // Placeholder for actual prediction logic
         }
     </script>
 </body>
