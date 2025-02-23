@@ -38,20 +38,21 @@ X_processed = preprocessor.fit_transform(X)
 X_train, X_test, y_train, y_test = train_test_split(X_processed, y, test_size=0.2, random_state=42)
 
 # 7. Build a TensorFlow Keras model (a simple feed-forward network)
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(128, activation='relu'), 
-                          # kernel_regularizer=tf.keras.regularizers.l2(0.0001)),
-    tf.keras.layers.BatchNormalization(),
-    tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(128, activation='relu'), 
-                          # kernel_regularizer=tf.keras.regularizers.l2(0.0001)),
-    # tf.keras.layers.BatchNormalization(),
-    # tf.keras.layers.Dropout(0.2),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dense(1)  # Regression output: drag coefficient
-])
+with tf.device("/GPU:0"):
+    model = tf.keras.Sequential([
+        tf.keras.layers.Dense(128, activation='relu'), 
+                            # kernel_regularizer=tf.keras.regularizers.l2(0.0001)),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Dense(128, activation='relu'), 
+                            # kernel_regularizer=tf.keras.regularizers.l2(0.0001)),
+        # tf.keras.layers.BatchNormalization(),
+        # tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(1)  # Regression output: drag coefficient
+    ])
+    model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 
-model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 model.summary()
 
 # 8. Train the model
@@ -70,3 +71,5 @@ print("Test MAE:", test_mae)
 # 10. Use the model for predictions
 predictions = model.predict(X_test)
 print("Sample predictions:", predictions[:5])
+
+model.save("dragcoeff.keras")

@@ -195,3 +195,5 @@ print("Test MAE:", test_mae)
 predictions = model.predict(X_test)
 print("First 5 predictions:", predictions[:5].ravel())
 print("First 5 actual:", y_test.iloc[:5].values)
+
+model.save("horsepower_dlpredict.keras")
