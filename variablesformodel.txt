@@ -1,0 +1,58 @@
+dragcoeff model
+hp = 200
+cylinders = 6
+displacement = 3000
+weight_lbs = 3500
+accel_0_60 = 6.5
+model_year = 2019
+top_speed = 155
+wheelbase_mm = 2800
+track_width_mm = 1500
+ground_clearance_mm = 140
+frontal_area = 2.2
+lift_coeff = 0.01
+roofline_slope_deg = 20
+name = "SomeCar V6"
+fuel_type = "Gasoline"
+drivetrain = "RWD"
+transmission_type = "Automatic"
+origin = "USA"
+spoiler_wing_type = "None"
+underbody_aero = "Standard"
+grille_type = "Mesh"
+air_vent_type = "Standard"
+side_mirror_type = "Standard"
+
+
+torque model
+company = "Honda"
+model_name = "Civic"
+year = 2020
+weight = 2800
+mpg = 32
+volume = 95
+cylinders = 4
+wheel_size = 16
+fuel_type = "Gasoline"
+transmission = "Automatic"
+engine = "Inline-4"
+engine_size = 1.8
+vehicle_class = "Sedan"
+tire_type = "All-season"
+horsepower = 150
+price = 20000
+drivetrain = "FWD"
+
+
+horsepower model
+year = 2015
+kilometers_driven = 41000
+mileage = 19.6
+engine = 1582
+seats = 5
+price = 12500
+name = "Hyundai Creta 1.6 CRDi"
+location = "Pune"
+fuel_type = "Diesel"
+transmission = "Manual"
+owner_type = "First"
