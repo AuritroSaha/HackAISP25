@@ -175,8 +175,46 @@
         }
 
         function getPrediction() {
-            document.getElementById("drag_pred").innerText = "0.29"; // Placeholder
+      // Gather input values using lowercase IDs.
+      const data = {
+  Name: document.getElementById("model").value,
+  ModelYear: document.getElementById("Model Year").value,
+  FuelType: document.getElementById("Fuel Type").value,
+  Drivetrain: document.getElementById("Drivetrain").value,
+  TransmissionType: document.getElementById("Transmission Type").value,
+  Horsepower: document.getElementById("Horsepower").value,
+  Cylinders: document.getElementById("Cylinders").value,
+  DisplacementCC: document.getElementById("Displacement (cc)").value,
+  WeightLbs: document.getElementById("Weight (lbs)").value,
+  SpoilerWingType: document.getElementById("Spoiler/Wing Type").value,
+  FrontalAreaM2: document.getElementById("Frontal Area (m²)").value,
+  LiftCoefficient: document.getElementById("Lift Coefficient").value,
+  UnderbodyAero: document.getElementById("Underbody Aero").value,
+  GrilleType: document.getElementById("Grille Type").value,
+  AirVentType: document.getElementById("Air Vent Type").value,
+  RooflineSlopeDegrees: document.getElementById("Roofline Slope (degrees)").value,
+  SideMirrorType: document.getElementById("Side Mirror Type").value
+};
+
+      // IMPORTANT: Use port 5000 for the Flask back-end.
+      fetch('http://127.0.0.1:5000/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(result => {
+        if(result.error) {
+          alert("Error: " + result.error);
+        } else {
+          document.getElementById("drag_pred").innerText = result.drag_coefficient;
         }
-    </script>
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert("An error occurred. Check the console for details.");
+      });
+    }
+  </script>
 </body>
 </html>
