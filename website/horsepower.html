@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horsepower Predictor</title>
@@ -53,9 +54,7 @@
             cursor: pointer;
             text-decoration: none;
         }
-        .back-button:hover {
-            background-color: #555;
-        }
+        .back-button:hover { background-color: #555; }
     </style>
 </head>
 <body>
@@ -63,44 +62,41 @@
     <div class="container">
         <h2>Horsepower Predictor</h2>
 
-        <label>Upload CSV File:</label>
-        <input type="file" id="csvFileInput" accept=".csv">
-
-        <label for="model">Name:</label>
+        <label>Name:</label>
         <select id="model" onchange="populateYearDropdown()"></select>
 
-        <label for="year">Year:</label>
+        <label>Year:</label>
         <select id="year" onchange="autofillCarDetails()"></select>
 
         <label>Location:</label>
-        <input type="text" id="location">
+        <input type="text" id="Location">
 
         <label>Kilometers Driven:</label>
-        <input type="number" id="kilometersDriven">
+        <input type="number" id="Kilometers_Driven">
 
         <label>Fuel Type:</label>
-        <input type="text" id="fuelType">
+        <input type="text" id="Fuel_Type">
 
         <label>Transmission:</label>
-        <input type="text" id="transmission">
+        <input type="text" id="Transmission">
 
         <label>Owner Type:</label>
-        <input type="text" id="ownerType">
+        <input type="text" id="Owner_Type">
 
         <label>Mileage:</label>
-        <input type="text" id="mileage">
+        <input type="text" id="Mileage">
 
         <label>Engine:</label>
-        <input type="text" id="engine">
+        <input type="text" id="Engine">
 
         <label>Seats:</label>
-        <input type="number" id="seats">
-
-        <label>New Price:</label>
-        <input type="text" id="newPrice">
+        <input type="number" id="Seats">
 
         <label>Price:</label>
-        <input type="text" id="price">
+        <input type="text" id="Price">
+
+        <label>Power:</label>
+        <input type="text" id="Power">
 
         <button onclick="getPrediction()">Predict</button>
 
@@ -111,8 +107,59 @@
     </div>
 
     <script>
+        let carData = [];
+
+        fetch('used_cars_data.csv')
+            .then(response => response.text())
+            .then(text => parseCSV(text));
+
+        function parseCSV(text) {
+            const rows = text.trim().split("\n").map(row => row.split(","));
+            const headers = rows.shift().map(h => h.trim());
+
+            carData = rows.map(row => {
+                let obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = row[index] ? row[index].trim() : "";
+                });
+                return obj;
+            });
+
+            populateModelDropdown();
+        }
+
+        function populateModelDropdown() {
+            let modelDropdown = document.getElementById("model");
+            let uniqueModels = [...new Set(carData.map(car => car.Name).filter(Boolean))];
+            modelDropdown.innerHTML = `<option value="">Select Model</option>` +
+                uniqueModels.map(model => `<option value="${model}">${model}</option>`).join("");
+        }
+
+        function populateYearDropdown() {
+            let model = document.getElementById("model").value;
+            let yearDropdown = document.getElementById("year");
+            let years = [...new Set(carData.filter(car => car.Name === model).map(car => car.Year))];
+            yearDropdown.innerHTML = `<option value="">Select Year</option>` +
+                years.map(year => `<option value="${year}">${year}</option>`).join("");
+        }
+
+        function autofillCarDetails() {
+            let model = document.getElementById("model").value;
+            let year = document.getElementById("year").value;
+            let selectedCar = carData.find(car => car.Name === model && car.Year === year);
+
+            if (selectedCar) {
+                Object.keys(selectedCar).forEach(key => {
+                    const id = key.replace(/\s+/g, '_');
+                    if(document.getElementById(id)){
+                        document.getElementById(id).value = selectedCar[key];
+                    }
+                });
+            }
+        }
+
         function getPrediction() {
-            document.getElementById("horsepower_pred").innerText = "150 hp"; // placeholder prediction
+            document.getElementById("horsepower_pred").innerText = document.getElementById("Power").value;
         }
     </script>
 </body>
