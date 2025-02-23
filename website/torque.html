@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPG Predictor</title>
+    <title>Torque Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,12 +29,12 @@
             border: 1px solid #ccc;
         }
         button {
-            background-color: #28a745;
+            background-color: #17a2b8;
             color: white;
             border: none;
             cursor: pointer;
         }
-        button:hover { background-color: #218838; }
+        button:hover { background-color: #138496; }
         .results {
             margin-top: 20px;
             padding: 15px;
@@ -61,73 +61,124 @@
     <a href="cardicter.html" class="back-button">Go Back</a>
 
     <div class="container">
-        <h2>MPG Predictor</h2>
+        <h2>Torque Predictor</h2>
 
-        <label>Upload CSV File:</label>
-        <input type="file" id="csvFileInput" accept=".csv">
-
-        <label for="model">Model:</label>
+        <label>Model:</label>
         <select id="model" onchange="populateYearDropdown()"></select>
 
-        <label for="year">Year:</label>
-        <select id="year" onchange="autofillCarDetails()"></select>
+        <label>Year:</label>
+        <select id="Year" onchange="autofillCarDetails()"></select>
 
         <label>Company:</label>
-        <input type="text" id="company">
+        <input id="Company">
 
-        <label>Weight (kg):</label>
-        <input type="number" id="weight">
+        <label>Weight:</label>
+        <input id="Weight">
 
-        <label>Volume (cc):</label>
-        <input type="number" id="volume">
+        <label>MPG:</label>
+        <input id="MPG">
+
+        <label>Volume:</label>
+        <input id="Volume">
 
         <label>Cylinders:</label>
-        <input type="number" id="cylinders">
+        <input id="Cylinders">
 
-        <label>Wheel Size (inches):</label>
-        <input type="number" id="wheelSize">
+        <label>Wheel Size:</label>
+        <input id="WheelSize">
 
         <label>Fuel Type:</label>
-        <input type="text" id="fuelType">
+        <input id="FuelType">
 
         <label>Transmission:</label>
-        <input type="text" id="transmission">
+        <input id="Transmission">
 
         <label>Engine:</label>
-        <input type="text" id="engine">
+        <input id="Engine">
 
-        <label>Engine Size (L):</label>
-        <input type="number" id="engineSize">
+        <label>Engine Size:</label>
+        <input id="EngineSize">
 
         <label>Vehicle Class:</label>
-        <input type="text" id="vehicleClass">
+        <input id="VehicleClass">
 
         <label>Tire Type:</label>
-        <input type="text" id="tireType">
+        <input id="TireType">
 
         <label>Horsepower:</label>
-        <input type="number" id="horsepower">
+        <input id="Horsepower">
 
-        <label>Torque (Nm):</label>
-        <input type="number" id="torque">
+        <label>Torque:</label>
+        <input id="Torque">
 
-        <label>Price ($):</label>
-        <input type="number" id="price">
+        <label>Price:</label>
+        <input id="Price">
 
         <label>Drivetrain:</label>
-        <input type="text" id="drivetrain">
+        <input id="Drivetrain">
 
         <button onclick="getPrediction()">Predict</button>
 
         <div class="results">
-            <h3>Predicted MPG:</h3>
-            <p><strong><span id="mpg_pred"></span></strong></p>
+            <h3>Predicted Torque:</h3>
+            <p><strong><span id="torque_pred"></span></strong></p>
         </div>
     </div>
 
     <script>
+        let carData = [];
+
+        fetch('dataGen.csv')
+            .then(response => response.text())
+            .then(text => parseCSV(text));
+
+        function parseCSV(text) {
+            const rows = text.trim().split("\n").map(row => row.split(","));
+            const headers = rows.shift().map(h => h.trim());
+
+            carData = rows.map(row => {
+                let obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = row[index] ? row[index].trim() : "";
+                });
+                return obj;
+            });
+
+            populateModelDropdown();
+        }
+
+        function populateModelDropdown() {
+            let modelDropdown = document.getElementById("model");
+            let uniqueModels = [...new Set(carData.map(car => car.Model).filter(Boolean))];
+            modelDropdown.innerHTML = `<option value="">Select Model</option>` +
+                uniqueModels.map(model => `<option value="${model}">${model}</option>`).join("");
+        }
+
+        function populateYearDropdown() {
+            let model = document.getElementById("model").value;
+            let yearDropdown = document.getElementById("Year");
+            let years = [...new Set(carData.filter(car => car.Model === model).map(car => car.Year))];
+
+            yearDropdown.innerHTML = `<option value="">Select Year</option>` +
+                years.map(year => `<option value="${year}">${year}</option>`).join("");
+        }
+
+        function autofillCarDetails() {
+            let model = document.getElementById("model").value;
+            let year = document.getElementById("Year").value;
+            let selectedCar = carData.find(car => car.Model === model && car.Year === year);
+
+            if (selectedCar) {
+                Object.keys(selectedCar).forEach(key => {
+                    if(document.getElementById(key)){
+                        document.getElementById(key).value = selectedCar[key];
+                    }
+                });
+            }
+        }
+
         function getPrediction() {
-            document.getElementById("mpg_pred").innerText = document.getElementById("mpg").value; // Placeholder for actual prediction logic
+            document.getElementById("torque_pred").innerText = document.getElementById("Torque").value;
         }
     </script>
 </body>
