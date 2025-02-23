@@ -66,6 +66,12 @@
     <label>Company:</label>
     <input type="text" id="company">
 
+    <label>Weight (kg):</label>
+    <input type="number" id="weight">
+
+    <label>MPG:</label>
+    <input type="number" id="mpg">
+
     <label>Volume (cc):</label>
     <input type="number" id="volume">
 
@@ -93,6 +99,15 @@
     <label>Tire Type:</label>
     <input type="text" id="tireType">
 
+    <label>Horsepower:</label>
+    <input type="number" id="horsepower">
+
+    <label>Torque (Nm):</label>
+    <input type="number" id="torque">
+
+    <label>Price ($):</label>
+    <input type="number" id="price">
+
     <label>Drivetrain:</label>
     <input type="text" id="drivetrain">
 
@@ -102,10 +117,6 @@
         <h3>Predicted Values:</h3>
         <p><strong>Drag Coefficient:</strong> <span id="drag_coefficient"></span></p>
         <p><strong>MPG:</strong> <span id="mpg_pred"></span></p>
-        <p><strong>Horsepower:</strong> <span id="horsepower_pred"></span></p>
-        <p><strong>Torque:</strong> <span id="torque_pred"></span></p>
-        <p><strong>Price:</strong> <span id="price_pred"></span></p>
-        <p><strong>Weight:</strong> <span id="weight_pred"></span></p>
     </div>
 </div>
 
@@ -159,6 +170,8 @@
 
         if (selectedCar) {
             document.getElementById("company").value = selectedCar.Company || "";
+            document.getElementById("weight").value = selectedCar.Weight || "";
+            document.getElementById("mpg").value = selectedCar.MPG || "";
             document.getElementById("volume").value = selectedCar.Volume || "";
             document.getElementById("cylinders").value = selectedCar.Cylinders || "";
             document.getElementById("wheelSize").value = selectedCar.WheelSize || "";
@@ -168,20 +181,51 @@
             document.getElementById("engineSize").value = selectedCar.EngineSize || "";
             document.getElementById("vehicleClass").value = selectedCar.VehicleClass || "";
             document.getElementById("tireType").value = selectedCar.TireType || "";
+            document.getElementById("horsepower").value = selectedCar.Horsepower || "";
+            document.getElementById("torque").value = selectedCar.Torque || "";
+            document.getElementById("price").value = selectedCar.Price || "";
             document.getElementById("drivetrain").value = selectedCar.Drivetrain || "";
         }
     }
 
+    // API Call to get prediction
+    
     function getPrediction() {
-        // Simulating prediction results (Replace with actual API call)
-        document.getElementById("drag_coefficient").innerText = "0.32";
-        document.getElementById("mpg_pred").innerText = document.getElementById("mpg").value;
-        document.getElementById("horsepower_pred").innerText = document.getElementById("horsepower").value;
-        document.getElementById("torque_pred").innerText = document.getElementById("torque").value;
-        document.getElementById("price_pred").innerText = document.getElementById("price").value;
-        document.getElementById("weight_pred").innerText = document.getElementById("weight").value;
+        // Gather input field values
+        const data = {
+            Company: document.getElementById("company").value,
+            Model: document.getElementById("model").value,
+            Year: document.getElementById("year").value,
+            Volume: document.getElementById("volume").value,
+            Cylinders: document.getElementById("cylinders").value,
+            WheelSize: document.getElementById("wheelSize").value,
+            FuelType: document.getElementById("fuelType").value,
+            Transmission: document.getElementById("transmission").value,
+            Engine: document.getElementById("engine").value,
+            EngineSize: document.getElementById("engineSize").value,
+            VehicleClass: document.getElementById("vehicleClass").value,
+            TireType: document.getElementById("tireType").value,
+            Drivetrain: document.getElementById("drivetrain").value
+        };
+
+        // Send data to the back-end for prediction
+        fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            // Update the HTML with the predictions
+            document.getElementById("mpg_pred").innerText = result.mpg;
+            document.getElementById("drag_coefficient").innerText = result.drag_coefficient;
+        })
+        .catch(error => console.error('Error:', error));
     }
 </script>
+
 
 </body>
 </html>
