@@ -53,26 +53,30 @@ def predict_mpg():
 # Drag Coefficient Prediction Endpoint
 #############################################
 # Load the trained drag coefficient model (e.g., "dragcoeff_dlpredict.keras")
-drag_model = tf.keras.models.load_model("dragcoeff_dlpredict.keras")
-
-# Load the fitted ColumnTransformer (e.g., "dragcoeff_preprocessor.pkl")
-drag_preprocessor = joblib.load("dragcoeff_preprocessor.pkl")
-
+# ===================== Drag Coefficient Model Setup =====================
 # Define columns for your drag coefficient model
-drag_numeric_cols = [
+numeric_cols = [
     "Horsepower (hp)", "Cylinders", "Displacement (cc)", "Weight (lbs)",
     "Acceleration (0-60 mph in s)", "Model Year", "Top Speed (mph)",
     "Wheelbase (mm)", "Track Width (mm)", "Ground Clearance (mm)",
     "Frontal Area (m²)", "Lift Coefficient", "Roofline Slope (degrees)"
 ]
-drag_categorical_cols = [
+categorical_cols = [
     "Name", "Fuel Type", "Drivetrain", "Transmission Type", "Origin",
-    "Spoiler/Wing Type", "Underbody Aero", "Grille Type", "Air Vent Type", "Side Mirror Type"
+    "Spoiler/Wing Type", "Underbody Aero", "Grille Type", "Air Vent Type",
+    "Side Mirror Type"
 ]
+all_columns = numeric_cols + categorical_cols
 
-# Combine all required columns
-drag_all_columns = drag_numeric_cols + drag_categorical_cols
+# Create aliases matching your original variable names
+drag_numeric_cols = numeric_cols
+drag_all_columns = all_columns
 
+# Load the trained Keras model and preprocessor
+drag_model = tf.keras.models.load_model("dragcoeff_dlpredict.keras")
+drag_preprocessor = joblib.load("dragcoeff_preprocessor.pkl")
+
+# ===================== Drag Coefficient Prediction Endpoint =====================
 @app.route('/predict_drag', methods=['POST'])
 def predict_drag():
     try:
@@ -80,21 +84,22 @@ def predict_drag():
         data = request.get_json()
         input_df = pd.DataFrame([data])
         
-        # Ensure that the DataFrame has the required columns in the correct order
-        input_df = input_df[drag_all_columns]
-
-        # Convert numeric columns to numeric types
+        # Ensure that the DataFrame has all the required columns.
+        # reindex adds any missing columns as NaN instead of raising an error.
+        input_df = input_df.reindex(columns=drag_all_columns)
+        
+        # Convert numeric columns to the appropriate numeric type
         for col in drag_numeric_cols:
-            if col in input_df.columns:
-                input_df[col] = pd.to_numeric(input_df[col], errors="coerce")
+            input_df[col] = pd.to_numeric(input_df[col], errors="coerce")
         
         # Preprocess the data using the fitted ColumnTransformer
         X_new = drag_preprocessor.transform(input_df)
 
         # Predict the drag coefficient using the loaded Keras model
         drag_pred = drag_model.predict(X_new)
-        # Assuming the model returns a 2D array (n, 1), extract the value
-        drag_value = float(drag_pred[0][0])
+        # Squeeze to extract a scalar value (handles both (1,1) and (1,) shapes)
+        drag_value = float(drag_pred.squeeze())
+        
         return jsonify({'drag_coefficient': drag_value})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
