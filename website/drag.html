@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Coefficient Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 { text-align: center; }
+        label { font-weight: bold; }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover { background-color: #0056b3; }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <a href="cardicter.html" class="back-button">Go Back</a>
+    <div class="container">
+        <h2>Drag Coefficient Predictor</h2>
+
+        <label>Upload CSV File:</label>
+        <input type="file" id="csvFileInput" accept=".csv">
+
+        <label for="model">Name:</label>
+        <select id="model" onchange="populateYearDropdown()"></select>
+
+        <label for="year">Model Year:</label>
+        <select id="year" onchange="autofillCarDetails()"></select>
+
+        <label>Fuel Type:</label>
+        <input type="text" id="fuelType">
+
+        <label>Drivetrain:</label>
+        <input type="text" id="drivetrain">
+
+        <label>Transmission Type:</label>
+        <input type="text" id="transmissionType">
+
+        <label>Horsepower (hp):</label>
+        <input type="number" id="horsepower">
+
+        <label>Cylinders:</label>
+        <input type="number" id="cylinders">
+
+        <label>Displacement (cc):</label>
+        <input type="number" id="displacement">
+
+        <label>Weight (lbs):</label>
+        <input type="number" id="weight">
+
+        <label>Spoiler/Wing Type:</label>
+        <input type="text" id="spoilerWingType">
+
+        <label>Frontal Area (m²):</label>
+        <input type="number" id="frontalArea">
+
+        <label>Lift Coefficient:</label>
+        <input type="number" id="liftCoefficient">
+
+        <label>Underbody Aero:</label>
+        <input type="text" id="underbodyAero">
+
+        <label>Grille Type:</label>
+        <input type="text" id="grilleType">
+
+        <label>Air Vent Type:</label>
+        <input type="text" id="airVentType">
+
+        <label>Roofline Slope (degrees):</label>
+        <input type="number" id="rooflineSlope">
+
+        <label>Side Mirror Type:</label>
+        <input type="text" id="sideMirrorType">
+
+        <button onclick="getPrediction()">Predict</button>
+
+        <div class="results">
+            <h3>Predicted Drag Coefficient:</h3>
+            <p><strong><span id="drag_pred"></span></strong></p>
+        </div>
+    </div>
+
+    <script>
+        function getPrediction() {
+            document.getElementById("drag_pred").innerText = "0.29"; // placeholder prediction
+        }
+    </script>
+</body>
+</html>
