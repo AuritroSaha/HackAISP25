@@ -40,7 +40,7 @@ def predict():
 
         # Predict MPG using the XGBoost model
         mpg_pred = mpg_model.predict(input_df)[0]
-        return jsonify({'mpg': float(mpg_pred)})
+        return jsonify({'mpg': "{:.1f}".format(float(mpg_pred)) })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
