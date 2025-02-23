@@ -39,12 +39,183 @@
     </style>
 </head>
 <body>
-    <h1>What do you want to predict?</h1>
-    <div class="button-container">
-        <button class="big-button" onclick="location.href='mpg.html'">MPG</button>
-        <button class="big-button" onclick="location.href='drag.html'">Drag Coefficient</button>
-        <button class="big-button" onclick="location.href='horsepower.html'">Horsepower</button>
-        <button class="big-button" onclick="location.href='torque.html'">Torque</button>
+
+<div class="container">
+    <h2>Car Performance Predictor</h2>
+
+    <!-- Upload CSV File -->
+    <label>Upload CSV File:</label>
+    <input type="file" id="csvFileInput" accept=".csv">
+
+    <label for="model">Model:</label>
+    <select id="model" onchange="populateYearDropdown()"></select>
+
+    <label for="year">Year:</label>
+    <select id="year" onchange="autofillCarDetails()"></select>
+
+    <label>Company:</label>
+    <input type="text" id="company">
+
+    <label>Weight (kg):</label>
+    <input type="number" id="weight">
+
+    <label>MPG:</label>
+    <input type="number" id="mpg">
+
+    <label>Volume (cc):</label>
+    <input type="number" id="volume">
+
+    <label>Cylinders:</label>
+    <input type="number" id="cylinders">
+
+    <label>Wheel Size (inches):</label>
+    <input type="number" id="wheelSize">
+
+    <label>Fuel Type:</label>
+    <input type="text" id="fuelType">
+
+    <label>Transmission:</label>
+    <input type="text" id="transmission">
+
+    <label>Engine:</label>
+    <input type="text" id="engine">
+
+    <label>Engine Size (L):</label>
+    <input type="number" id="engineSize">
+
+    <label>Vehicle Class:</label>
+    <input type="text" id="vehicleClass">
+
+    <label>Tire Type:</label>
+    <input type="text" id="tireType">
+
+    <label>Horsepower:</label>
+    <input type="number" id="horsepower">
+
+    <label>Torque (Nm):</label>
+    <input type="number" id="torque">
+
+    <label>Price ($):</label>
+    <input type="number" id="price">
+
+    <label>Drivetrain:</label>
+    <input type="text" id="drivetrain">
+
+    <button onclick="getPrediction()">Predict</button>
+
+    <div class="results">
+        <h3>Predicted Values:</h3>
+        <p><strong>Drag Coefficient:</strong> <span id="drag_coefficient"></span></p>
+        <p><strong>MPG:</strong> <span id="mpg_pred"></span></p>
     </div>
+</div>
+
+<script>
+    let carData = []; // Store CSV data
+
+    document.getElementById('csvFileInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const text = e.target.result;
+            parseCSV(text);
+        };
+
+        reader.readAsText(file);
+    });
+
+    function parseCSV(text) {
+        const rows = text.split("\n").map(row => row.split(","));
+        const headers = rows[0].map(h => h.trim());
+        carData = rows.slice(1).map(row => {
+            let obj = {};
+            headers.forEach((header, index) => obj[header] = row[index]?.trim());
+            return obj;
+        });
+
+        populateModelDropdown();
+    }
+
+    function populateModelDropdown() {
+        let modelDropdown = document.getElementById("model");
+        let uniqueModels = [...new Set(carData.map(car => car.Model))];
+        modelDropdown.innerHTML = `<option value="">Select Model</option>` + 
+            uniqueModels.map(model => `<option value="${model}">${model}</option>`).join("");
+    }
+
+    function populateYearDropdown() {
+        let model = document.getElementById("model").value;
+        let yearDropdown = document.getElementById("year");
+        let years = [...new Set(carData.filter(car => car.Model === model).map(car => car.Year))];
+
+        yearDropdown.innerHTML = `<option value="">Select Year</option>` + 
+            years.map(year => `<option value="${year}">${year}</option>`).join("");
+    }
+
+    function autofillCarDetails() {
+        let model = document.getElementById("model").value;
+        let year = document.getElementById("year").value;
+        let selectedCar = carData.find(car => car.Model === model && car.Year === year);
+
+        if (selectedCar) {
+            document.getElementById("company").value = selectedCar.Company || "";
+            document.getElementById("weight").value = selectedCar.Weight || "";
+            document.getElementById("mpg").value = selectedCar.MPG || "";
+            document.getElementById("volume").value = selectedCar.Volume || "";
+            document.getElementById("cylinders").value = selectedCar.Cylinders || "";
+            document.getElementById("wheelSize").value = selectedCar.WheelSize || "";
+            document.getElementById("fuelType").value = selectedCar.FuelType || "";
+            document.getElementById("transmission").value = selectedCar.Transmission || "";
+            document.getElementById("engine").value = selectedCar.Engine || "";
+            document.getElementById("engineSize").value = selectedCar.EngineSize || "";
+            document.getElementById("vehicleClass").value = selectedCar.VehicleClass || "";
+            document.getElementById("tireType").value = selectedCar.TireType || "";
+            document.getElementById("horsepower").value = selectedCar.Horsepower || "";
+            document.getElementById("torque").value = selectedCar.Torque || "";
+            document.getElementById("price").value = selectedCar.Price || "";
+            document.getElementById("drivetrain").value = selectedCar.Drivetrain || "";
+        }
+    }
+
+    // API Call to get prediction
+    
+    function getPrediction() {
+        // Gather input field values
+        const data = {
+            Company: document.getElementById("company").value,
+            Model: document.getElementById("model").value,
+            Year: document.getElementById("year").value,
+            Volume: document.getElementById("volume").value,
+            Cylinders: document.getElementById("cylinders").value,
+            WheelSize: document.getElementById("wheelSize").value,
+            FuelType: document.getElementById("fuelType").value,
+            Transmission: document.getElementById("transmission").value,
+            Engine: document.getElementById("engine").value,
+            EngineSize: document.getElementById("engineSize").value,
+            VehicleClass: document.getElementById("vehicleClass").value,
+            TireType: document.getElementById("tireType").value,
+            Drivetrain: document.getElementById("drivetrain").value
+        };
+
+        // Send data to the back-end for prediction
+        fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            // Update the HTML with the predictions
+            document.getElementById("mpg_pred").innerText = result.mpg;
+            document.getElementById("drag_coefficient").innerText = result.drag_coefficient;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
+
+
 </body>
 </html>
