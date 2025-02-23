@@ -72,4 +72,4 @@ print("Test MAE:", test_mae)
 predictions = model.predict(X_test)
 print("Sample predictions:", predictions[:5])
 
-model.save("dragcoeff.keras")
+model.save("dragcoeff_dlpredict.keras")
