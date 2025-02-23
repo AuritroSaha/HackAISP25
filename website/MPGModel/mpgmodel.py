@@ -72,6 +72,15 @@ else:
 final_xgb_model.save_model("final_xgb_model.json")
 print("✅ Model saved successfully!")
 
+import pickle
+# Save the label encoders to a pickle file
+with open("website/MPGModel/encoders.pkl", "wb") as f:
+    pickle.dump(encoders, f)
+print("✅ Encoders saved successfully!")
+
+
+
+
 # Load the saved model
 loaded_model = xgb.XGBRegressor()
 loaded_model.load_model("final_xgb_model.json")

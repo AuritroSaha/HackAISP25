@@ -1,44 +1,48 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import xgboost as xgb
-import tensorflow as tf
+from flask_cors import CORS
+import pickle
 
 app = Flask(__name__)
+CORS(app)
 
-# Load the MPG model (from your mpgmodel.py)
+# Load the pre-trained MPG model; adjust the path if necessary.
 mpg_model = xgb.XGBRegressor()
-mpg_model.load_model("final_xgb_model.json")
+mpg_model.load_model("website/MPGModel/final_xgb_model.json")
 
-# Load the drag coefficient model (your keras model)
-drag_model = tf.keras.models.load_model("dragcoeff_dlpredict.keras")
+# Load the saved encoders
+with open("website/MPGModel/encoders.pkl", "rb") as f:
+    encoders = pickle.load(f)
 
-# If you need to encode categorical features as in your training script,
-# you’ll need to load the same encoders (for example, from saved pickle files).
+# Define columns used during training
+categorical_cols = ["FuelType", "Engine", "TireType", "Company", "Model", "Transmission", "EngineSize", "VehicleClass", "Drivetrain"]
+numeric_cols = ["Year", "Weight", "Volume", "Cylinders", "WheelSize", "Horsepower", "Torque", "Price"]
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    # Get JSON data from the request
-    data = request.get_json()
+    try:
+        # Get JSON data from the request
+        data = request.get_json()
+        input_df = pd.DataFrame([data])
 
-    # Create a DataFrame from the input (ensure your keys match your training features)
-    input_df = pd.DataFrame([data])
-    
-    # Perform any necessary preprocessing, for example:
-    # for col in categorical_cols:
-    #     input_df[col] = encoders[col].transform(input_df[col])
-    
-    # Predict MPG using your xgboost model
-    mpg_pred = mpg_model.predict(input_df)[0]
-    
-    # Predict drag coefficient using your keras model
-    # (Assuming the keras model accepts the same input structure)
-    drag_pred = drag_model.predict(input_df)[0][0]
-    
-    # Return predictions as JSON
-    return jsonify({
-        'mpg': mpg_pred,
-        'drag_coefficient': drag_pred
-    })
+        # Convert numeric columns to float (or int) as needed
+        for col in numeric_cols:
+            if col in input_df.columns:
+                input_df[col] = pd.to_numeric(input_df[col], errors="coerce")
+
+        # Apply label encoding for categorical columns using the saved encoders
+        for col in categorical_cols:
+            if col in input_df.columns:
+                input_df[col] = input_df[col].apply(
+                    lambda x: encoders[col].transform([x])[0] if x in encoders[col].classes_ else -1
+                )
+
+        # Predict MPG using the XGBoost model
+        mpg_pred = mpg_model.predict(input_df)[0]
+        return jsonify({'mpg': float(mpg_pred)})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

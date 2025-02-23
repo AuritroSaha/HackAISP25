@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Performance Predictor</title>
+    <title>MPG Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f4;
+            position: relative;
         }
         .container {
             max-width: 600px;
@@ -18,12 +19,8 @@
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-        }
+        h2 { text-align: center; }
+        label { font-weight: bold; }
         input, select, button {
             width: 100%;
             padding: 10px;
@@ -37,176 +34,140 @@
             border: none;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #218838;
-        }
+        button:hover { background-color: #218838; }
         .results {
             margin-top: 20px;
             padding: 15px;
             background: #e9ecef;
             border-radius: 5px;
         }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover { background-color: #555; }
     </style>
 </head>
 <body>
+    <a href="cardicter.html" class="back-button">Go Back</a>
 
-<div class="container">
-    <h2>Car Performance Predictor</h2>
+    <div class="container">
+        <h2>MPG Predictor</h2>
 
-    <!-- Upload CSV File -->
-    <label>Upload CSV File:</label>
-    <input type="file" id="csvFileInput" accept=".csv">
+        <label>Upload CSV File:</label>
+        <input type="file" id="csvFileInput" accept=".csv">
 
-    <label for="model">Model:</label>
-    <select id="model" onchange="populateYearDropdown()"></select>
+        <label for="model">Model:</label>
+        <select id="model" onchange="populateYearDropdown()"></select>
 
-    <label for="year">Year:</label>
-    <select id="year" onchange="autofillCarDetails()"></select>
+        <label for="year">Year:</label>
+        <select id="year" onchange="autofillCarDetails()"></select>
 
-    <label>Company:</label>
-    <input type="text" id="company">
+        <label>Company:</label>
+        <input type="text" id="company">
 
-    <label>Weight (kg):</label>
-    <input type="number" id="weight">
+        <label>Weight (kg):</label>
+        <input type="number" id="weight">
 
-    <label>MPG:</label>
-    <input type="number" id="mpg">
+        <label>Volume (cc):</label>
+        <input type="number" id="volume">
 
-    <label>Volume (cc):</label>
-    <input type="number" id="volume">
+        <label>Cylinders:</label>
+        <input type="number" id="cylinders">
 
-    <label>Cylinders:</label>
-    <input type="number" id="cylinders">
+        <label>Wheel Size (inches):</label>
+        <input type="number" id="wheelSize">
 
-    <label>Wheel Size (inches):</label>
-    <input type="number" id="wheelSize">
+        <label>Fuel Type:</label>
+        <input type="text" id="fuelType">
 
-    <label>Fuel Type:</label>
-    <input type="text" id="fuelType">
+        <label>Transmission:</label>
+        <input type="text" id="transmission">
 
-    <label>Transmission:</label>
-    <input type="text" id="transmission">
+        <label>Engine:</label>
+        <input type="text" id="engine">
 
-    <label>Engine:</label>
-    <input type="text" id="engine">
+        <label>Engine Size (L):</label>
+        <input type="number" id="engineSize">
 
-    <label>Engine Size (L):</label>
-    <input type="number" id="engineSize">
+        <label>Vehicle Class:</label>
+        <input type="text" id="vehicleClass">
 
-    <label>Vehicle Class:</label>
-    <input type="text" id="vehicleClass">
+        <label>Tire Type:</label>
+        <input type="text" id="tireType">
 
-    <label>Tire Type:</label>
-    <input type="text" id="tireType">
+        <label>Horsepower:</label>
+        <input type="number" id="horsepower">
 
-    <label>Horsepower:</label>
-    <input type="number" id="horsepower">
+        <label>Torque (Nm):</label>
+        <input type="number" id="torque">
 
-    <label>Torque (Nm):</label>
-    <input type="number" id="torque">
+        <label>Price ($):</label>
+        <input type="number" id="price">
 
-    <label>Price ($):</label>
-    <input type="number" id="price">
+        <label>Drivetrain:</label>
+        <input type="text" id="drivetrain">
 
-    <label>Drivetrain:</label>
-    <input type="text" id="drivetrain">
+        <button onclick="getPrediction()">Predict</button>
 
-    <button onclick="getPrediction()">Predict</button>
-
-    <div class="results">
-        <h3>Predicted Values:</h3>
-        <p><strong>Drag Coefficient:</strong> <span id="drag_coefficient"></span></p>
-        <p><strong>MPG:</strong> <span id="mpg_pred"></span></p>
-        <p><strong>Horsepower:</strong> <span id="horsepower_pred"></span></p>
-        <p><strong>Torque:</strong> <span id="torque_pred"></span></p>
-        <p><strong>Price:</strong> <span id="price_pred"></span></p>
-        <p><strong>Weight:</strong> <span id="weight_pred"></span></p>
+        <div class="results">
+            <h3>Predicted MPG:</h3>
+            <p><strong><span id="mpg_pred"></span></strong></p>
+        </div>
     </div>
-</div>
 
-<script>
-    let carData = []; // Store CSV data
-
-    document.getElementById('csvFileInput').addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-            const text = e.target.result;
-            parseCSV(text);
+    <script>
+        
+    function getPrediction() {
+        // Gather input values from your form
+        const data = {
+            Company: document.getElementById("company").value,
+            Model: document.getElementById("model").value,
+            Year: document.getElementById("year").value,
+            Weight: document.getElementById("weight").value,
+            Volume: document.getElementById("volume").value,
+            Cylinders: document.getElementById("cylinders").value,
+            WheelSize: document.getElementById("wheelSize").value,
+            FuelType: document.getElementById("fuelType").value,
+            Transmission: document.getElementById("transmission").value,
+            Engine: document.getElementById("engine").value,
+            EngineSize: document.getElementById("engineSize").value,
+            VehicleClass: document.getElementById("vehicleClass").value,
+            TireType: document.getElementById("tireType").value,
+            Horsepower: document.getElementById("horsepower").value,
+            Torque: document.getElementById("torque").value,
+            Price: document.getElementById("price").value,
+            Drivetrain: document.getElementById("drivetrain").value
         };
 
-        reader.readAsText(file);
-    });
-
-    function parseCSV(text) {
-        const rows = text.split("\n").map(row => row.split(","));
-        const headers = rows[0].map(h => h.trim());
-        carData = rows.slice(1).map(row => {
-            let obj = {};
-            headers.forEach((header, index) => obj[header] = row[index]?.trim());
-            return obj;
+        // Send the data to the Flask back‑end
+        fetch('http://127.0.0.1:5000/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            if(result.error) {
+                alert("Error: " + result.error);
+            } else {
+                document.getElementById("mpg_pred").innerText = result.mpg;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("An error occurred. Check the console for details.");
         });
-
-        populateModelDropdown();
-    }
-
-    function populateModelDropdown() {
-        let modelDropdown = document.getElementById("model");
-        let uniqueModels = [...new Set(carData.map(car => car.Model))];
-        modelDropdown.innerHTML = `<option value="">Select Model</option>` + 
-            uniqueModels.map(model => `<option value="${model}">${model}</option>`).join("");
-    }
-
-    function populateYearDropdown() {
-        let model = document.getElementById("model").value;
-        let yearDropdown = document.getElementById("year");
-        let years = [...new Set(carData.filter(car => car.Model === model).map(car => car.Year))];
-
-        yearDropdown.innerHTML = `<option value="">Select Year</option>` + 
-            years.map(year => `<option value="${year}">${year}</option>`).join("");
-    }
-
-    function autofillCarDetails() {
-        let model = document.getElementById("model").value;
-        let year = document.getElementById("year").value;
-        let selectedCar = carData.find(car => car.Model === model && car.Year === year);
-
-        if (selectedCar) {
-            document.getElementById("company").value = selectedCar.Company || "";
-            document.getElementById("weight").value = selectedCar.Weight || "";
-            document.getElementById("mpg").value = selectedCar.MPG || "";
-            document.getElementById("volume").value = selectedCar.Volume || "";
-            document.getElementById("cylinders").value = selectedCar.Cylinders || "";
-            document.getElementById("wheelSize").value = selectedCar.WheelSize || "";
-            document.getElementById("fuelType").value = selectedCar.FuelType || "";
-            document.getElementById("transmission").value = selectedCar.Transmission || "";
-            document.getElementById("engine").value = selectedCar.Engine || "";
-            document.getElementById("engineSize").value = selectedCar.EngineSize || "";
-            document.getElementById("vehicleClass").value = selectedCar.VehicleClass || "";
-            document.getElementById("tireType").value = selectedCar.TireType || "";
-            document.getElementById("horsepower").value = selectedCar.Horsepower || "";
-            document.getElementById("torque").value = selectedCar.Torque || "";
-            document.getElementById("price").value = selectedCar.Price || "";
-            document.getElementById("drivetrain").value = selectedCar.Drivetrain || "";
-        }
-    }
-
-    function getPrediction() {
-        // Simulating prediction results (Replace with actual API call)
-        document.getElementById("drag_coefficient").innerText = "0.32";
-        document.getElementById("mpg_pred").innerText = document.getElementById("mpg").value;
-        document.getElementById("horsepower_pred").innerText = document.getElementById("horsepower").value;
-        document.getElementById("torque_pred").innerText = document.getElementById("torque").value;
-        document.getElementById("price_pred").innerText = document.getElementById("price").value;
-        document.getElementById("weight_pred").innerText = document.getElementById("weight").value;
     }
 </script>
-
 </body>
 </html>
-
-
-horsepower - used cars
-torque - data getElementById
-drag - detailed car
