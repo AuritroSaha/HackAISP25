@@ -1,0 +1,606 @@
+Company,Model,Year,Weight,MPG,Volume,Cylinders,WheelSize,FuelType,Transmission,Engine,EngineSize,VehicleClass,TireType,Horsepower,Torque,Price,Drivetrain
+Honda,Accord,2010,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,185,181,23000,FWD
+Honda,Accord,2011,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,186,182,23460,FWD
+Honda,Accord,2012,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,187,183,23920,FWD
+Honda,Accord,2013,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,188,184,24380,FWD
+Honda,Accord,2014,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,189,185,24840,FWD
+Honda,Accord,2015,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,190,186,25300,FWD
+Honda,Accord,2016,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,191,187,25760,FWD
+Honda,Accord,2017,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,192,188,26220,FWD
+Honda,Accord,2018,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,193,189,26680,FWD
+Honda,Accord,2019,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,194,190,27140,FWD
+Honda,Accord,2020,3200,30,100,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,195,191,27600,FWD
+Honda,Civic,2010,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,158,138,20000,FWD
+Honda,Civic,2011,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,159,139,20400,FWD
+Honda,Civic,2012,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,160,140,20800,FWD
+Honda,Civic,2013,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,161,141,21200,FWD
+Honda,Civic,2014,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,162,142,21600,FWD
+Honda,Civic,2015,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,163,143,22000,FWD
+Honda,Civic,2016,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,164,144,22400,FWD
+Honda,Civic,2017,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,165,145,22800,FWD
+Honda,Civic,2018,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,166,146,23200,FWD
+Honda,Civic,2019,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,167,147,23600,FWD
+Honda,Civic,2020,2700,32,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,168,148,24000,FWD
+Honda,CR-V,2010,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,184,180,25000,FWD
+Honda,CR-V,2011,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,185,181,25500,FWD
+Honda,CR-V,2012,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,186,182,26000,FWD
+Honda,CR-V,2013,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,187,183,26500,FWD
+Honda,CR-V,2014,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,188,184,27000,FWD
+Honda,CR-V,2015,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,189,185,27500,FWD
+Honda,CR-V,2016,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,190,186,28000,FWD
+Honda,CR-V,2017,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,191,187,28500,FWD
+Honda,CR-V,2018,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,192,188,29000,FWD
+Honda,CR-V,2019,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,193,189,29500,FWD
+Honda,CR-V,2020,3500,28,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,194,190,30000,FWD
+Honda,Odyssey,2010,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,280,262,31000,FWD
+Honda,Odyssey,2011,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,281,263,31620,FWD
+Honda,Odyssey,2012,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,282,264,32240,FWD
+Honda,Odyssey,2013,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,283,265,32860,FWD
+Honda,Odyssey,2014,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,284,266,33480,FWD
+Honda,Odyssey,2015,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,285,267,34100,FWD
+Honda,Odyssey,2016,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,286,268,34720,FWD
+Honda,Odyssey,2017,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,287,269,35340,FWD
+Honda,Odyssey,2018,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,288,270,35960,FWD
+Honda,Odyssey,2019,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,289,271,36580,FWD
+Honda,Odyssey,2020,4200,22,150,6,18,Gasoline,Automatic,V6,3.5,Minivan,All-season,290,272,37200,FWD
+Honda,Pilot,2010,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,280,262,32000,FWD
+Honda,Pilot,2011,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,281,263,32640,FWD
+Honda,Pilot,2012,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,282,264,33280,FWD
+Honda,Pilot,2013,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,283,265,33920,FWD
+Honda,Pilot,2014,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,284,266,34560,FWD
+Honda,Pilot,2015,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,285,267,35200,FWD
+Honda,Pilot,2016,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,286,268,35840,FWD
+Honda,Pilot,2017,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,287,269,36480,FWD
+Honda,Pilot,2018,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,288,270,37120,FWD
+Honda,Pilot,2019,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,289,271,37760,FWD
+Honda,Pilot,2020,4500,20,145,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,290,272,38400,FWD
+Acura,MDX,2010,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,290,267,45000,AWD
+Acura,MDX,2011,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,291,268,45900,AWD
+Acura,MDX,2012,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,292,269,46800,AWD
+Acura,MDX,2013,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,293,270,47700,AWD
+Acura,MDX,2014,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,294,271,48600,AWD
+Acura,MDX,2015,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,295,272,49500,AWD
+Acura,MDX,2016,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,296,273,50400,AWD
+Acura,MDX,2017,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,297,274,51300,AWD
+Acura,MDX,2018,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,298,275,52200,AWD
+Acura,MDX,2019,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,299,276,53100,AWD
+Acura,MDX,2020,4300,21,150,6,19,Gasoline,Automatic,V6,3.5,SUV,All-season,300,277,54000,AWD
+Acura,RDX,2010,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,272,280,38000,AWD
+Acura,RDX,2011,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,273,281,38760,AWD
+Acura,RDX,2012,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,274,282,39520,AWD
+Acura,RDX,2013,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,275,283,40280,AWD
+Acura,RDX,2014,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,276,284,41040,AWD
+Acura,RDX,2015,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,277,285,41800,AWD
+Acura,RDX,2016,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,278,286,42560,AWD
+Acura,RDX,2017,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,279,287,43320,AWD
+Acura,RDX,2018,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,280,288,44080,AWD
+Acura,RDX,2019,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,281,289,44840,AWD
+Acura,RDX,2020,3800,24,140,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,282,290,45600,AWD
+Acura,TLX,2010,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,206,258,35000,FWD
+Acura,TLX,2011,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,207,259,35700,FWD
+Acura,TLX,2012,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,208,260,36400,FWD
+Acura,TLX,2013,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,209,261,37100,FWD
+Acura,TLX,2014,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,210,262,37800,FWD
+Acura,TLX,2015,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,211,263,38500,FWD
+Acura,TLX,2016,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,212,264,39200,FWD
+Acura,TLX,2017,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,213,265,39900,FWD
+Acura,TLX,2018,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,214,266,40600,FWD
+Acura,TLX,2019,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,215,267,41300,FWD
+Acura,TLX,2020,3600,26,110,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,216,268,42000,FWD
+Acura,ILX,2010,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,201,180,26000,FWD
+Acura,ILX,2011,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,202,181,26520,FWD
+Acura,ILX,2012,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,203,182,27040,FWD
+Acura,ILX,2013,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,204,183,27560,FWD
+Acura,ILX,2014,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,205,184,28080,FWD
+Acura,ILX,2015,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,206,185,28600,FWD
+Acura,ILX,2016,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,207,186,29120,FWD
+Acura,ILX,2017,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,208,187,29640,FWD
+Acura,ILX,2018,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,209,188,30160,FWD
+Acura,ILX,2019,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,210,189,30680,FWD
+Acura,ILX,2020,3200,27,105,4,16,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,211,190,31200,FWD
+Acura,NSX,2010,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,573,476,157500,AWD
+Acura,NSX,2011,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,574,477,160650,AWD
+Acura,NSX,2012,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,575,478,163800,AWD
+Acura,NSX,2013,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,576,479,166950,AWD
+Acura,NSX,2014,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,577,480,170100,AWD
+Acura,NSX,2015,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,578,481,173250,AWD
+Acura,NSX,2016,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,579,482,176400,AWD
+Acura,NSX,2017,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,580,483,179550,AWD
+Acura,NSX,2018,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,581,484,182700,AWD
+Acura,NSX,2019,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,582,485,185850,AWD
+Acura,NSX,2020,3500,21,90,6,19,Hybrid,Automatic,Twin-Turbo V6 Hybrid,3.5,Sports,Performance,583,486,189000,AWD
+Toyota,Camry,2010,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,203,184,24000,FWD
+Toyota,Camry,2011,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,204,185,24480,FWD
+Toyota,Camry,2012,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,205,186,24960,FWD
+Toyota,Camry,2013,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,206,187,25440,FWD
+Toyota,Camry,2014,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,207,188,25920,FWD
+Toyota,Camry,2015,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,208,189,26400,FWD
+Toyota,Camry,2016,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,209,190,26880,FWD
+Toyota,Camry,2017,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,210,191,27360,FWD
+Toyota,Camry,2018,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,211,192,27840,FWD
+Toyota,Camry,2019,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,212,193,28320,FWD
+Toyota,Camry,2020,3300,29,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,213,194,28800,FWD
+Toyota,Corolla,2010,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,139,126,20000,FWD
+Toyota,Corolla,2011,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,140,127,20400,FWD
+Toyota,Corolla,2012,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,141,128,20800,FWD
+Toyota,Corolla,2013,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,142,129,21200,FWD
+Toyota,Corolla,2014,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,143,130,21600,FWD
+Toyota,Corolla,2015,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,144,131,22000,FWD
+Toyota,Corolla,2016,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,145,132,22400,FWD
+Toyota,Corolla,2017,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,146,133,22800,FWD
+Toyota,Corolla,2018,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,147,134,23200,FWD
+Toyota,Corolla,2019,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,148,135,23600,FWD
+Toyota,Corolla,2020,2800,32,95,4,16,Gasoline,Automatic,Inline-4,1.8,Sedan,All-season,149,136,24000,FWD
+Toyota,RAV4,2010,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,203,184,26000,AWD
+Toyota,RAV4,2011,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,204,185,26520,AWD
+Toyota,RAV4,2012,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,205,186,27040,AWD
+Toyota,RAV4,2013,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,206,187,27560,AWD
+Toyota,RAV4,2014,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,207,188,28080,AWD
+Toyota,RAV4,2015,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,208,189,28600,AWD
+Toyota,RAV4,2016,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,209,190,29120,AWD
+Toyota,RAV4,2017,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,210,191,29640,AWD
+Toyota,RAV4,2018,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,211,192,30160,AWD
+Toyota,RAV4,2019,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,212,193,30680,AWD
+Toyota,RAV4,2020,3400,27,100,4,17,Gasoline,Automatic,Inline-4,2.5,SUV,All-season,213,194,31200,AWD
+Toyota,Highlander,2010,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,295,263,35000,AWD
+Toyota,Highlander,2011,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,296,264,35700,AWD
+Toyota,Highlander,2012,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,297,265,36400,AWD
+Toyota,Highlander,2013,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,298,266,37100,AWD
+Toyota,Highlander,2014,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,299,267,37800,AWD
+Toyota,Highlander,2015,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,300,268,38500,AWD
+Toyota,Highlander,2016,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,301,269,39200,AWD
+Toyota,Highlander,2017,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,302,270,39900,AWD
+Toyota,Highlander,2018,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,303,271,40600,AWD
+Toyota,Highlander,2019,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,304,272,41300,AWD
+Toyota,Highlander,2020,4300,24,125,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,305,273,42000,AWD
+Toyota,Prius,2010,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,121,105,24000,FWD
+Toyota,Prius,2011,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,122,106,24480,FWD
+Toyota,Prius,2012,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,123,107,24960,FWD
+Toyota,Prius,2013,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,124,108,25440,FWD
+Toyota,Prius,2014,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,125,109,25920,FWD
+Toyota,Prius,2015,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,126,110,26400,FWD
+Toyota,Prius,2016,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,127,111,26880,FWD
+Toyota,Prius,2017,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,128,112,27360,FWD
+Toyota,Prius,2018,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,129,113,27840,FWD
+Toyota,Prius,2019,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,130,114,28320,FWD
+Toyota,Prius,2020,3100,50,95,4,15,Hybrid,Automatic,Inline-4 Hybrid,1.8,Hatchback,All-season,131,115,28800,FWD
+Audi,A4,2010,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,188,236,37000,AWD
+Audi,A4,2011,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,189,237,37740,AWD
+Audi,A4,2012,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,190,238,38480,AWD
+Audi,A4,2013,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,191,239,39220,AWD
+Audi,A4,2014,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,192,240,39960,AWD
+Audi,A4,2015,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,193,241,40700,AWD
+Audi,A4,2016,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,194,242,41440,AWD
+Audi,A4,2017,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,195,243,42180,AWD
+Audi,A4,2018,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,196,244,42920,AWD
+Audi,A4,2019,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,197,245,43660,AWD
+Audi,A4,2020,3400,27,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,198,246,44400,AWD
+Audi,A6,2010,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,248,273,54000,AWD
+Audi,A6,2011,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,249,274,54900,AWD
+Audi,A6,2012,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,250,275,55800,AWD
+Audi,A6,2013,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,251,276,56700,AWD
+Audi,A6,2014,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,252,277,57600,AWD
+Audi,A6,2015,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,253,278,58500,AWD
+Audi,A6,2016,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,254,279,59400,AWD
+Audi,A6,2017,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,255,280,60300,AWD
+Audi,A6,2018,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,256,281,61200,AWD
+Audi,A6,2019,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,257,282,62100,AWD
+Audi,A6,2020,3700,26,105,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,258,283,63000,AWD
+Audi,Q5,2010,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,252,273,43000,AWD
+Audi,Q5,2011,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,253,274,43860,AWD
+Audi,Q5,2012,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,254,275,44720,AWD
+Audi,Q5,2013,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,255,276,45580,AWD
+Audi,Q5,2014,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,256,277,46440,AWD
+Audi,Q5,2015,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,257,278,47300,AWD
+Audi,Q5,2016,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,258,279,48160,AWD
+Audi,Q5,2017,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,259,280,49020,AWD
+Audi,Q5,2018,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,260,281,49880,AWD
+Audi,Q5,2019,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,261,282,50740,AWD
+Audi,Q5,2020,3900,25,110,4,19,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,262,283,51600,AWD
+Audi,Q7,2010,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,329,325,54000,AWD
+Audi,Q7,2011,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,330,326,54900,AWD
+Audi,Q7,2012,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,331,327,55800,AWD
+Audi,Q7,2013,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,332,328,56700,AWD
+Audi,Q7,2014,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,333,329,57600,AWD
+Audi,Q7,2015,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,334,330,58500,AWD
+Audi,Q7,2016,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,335,331,59400,AWD
+Audi,Q7,2017,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,336,332,60300,AWD
+Audi,Q7,2018,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,337,333,61200,AWD
+Audi,Q7,2019,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,338,334,62100,AWD
+Audi,Q7,2020,4700,20,130,6,20,Gasoline,Automatic,Turbocharged V6,3.0,SUV,All-season,339,335,63000,AWD
+Audi,TT,2010,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,228,258,45000,AWD
+Audi,TT,2011,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,229,259,45900,AWD
+Audi,TT,2012,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,230,260,46800,AWD
+Audi,TT,2013,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,231,261,47700,AWD
+Audi,TT,2014,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,232,262,48600,AWD
+Audi,TT,2015,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,233,263,49500,AWD
+Audi,TT,2016,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,234,264,50400,AWD
+Audi,TT,2017,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,235,265,51300,AWD
+Audi,TT,2018,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,236,266,52200,AWD
+Audi,TT,2019,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,237,267,53100,AWD
+Audi,TT,2020,3000,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,238,268,54000,AWD
+BMW,3 Series,2010,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,255,260,41000,RWD
+BMW,3 Series,2011,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,256,261,41820,RWD
+BMW,3 Series,2012,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,257,262,42640,RWD
+BMW,3 Series,2013,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,258,263,43460,RWD
+BMW,3 Series,2014,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,259,264,44280,RWD
+BMW,3 Series,2015,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,260,265,45100,RWD
+BMW,3 Series,2016,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,261,266,45920,RWD
+BMW,3 Series,2017,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,262,267,46740,RWD
+BMW,3 Series,2018,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,263,268,47560,RWD
+BMW,3 Series,2019,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,264,269,48380,RWD
+BMW,3 Series,2020,3300,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,265,270,49200,RWD
+BMW,5 Series,2010,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,248,258,54000,RWD
+BMW,5 Series,2011,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,249,259,54900,RWD
+BMW,5 Series,2012,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,250,260,55800,RWD
+BMW,5 Series,2013,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,251,261,56700,RWD
+BMW,5 Series,2014,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,252,262,57600,RWD
+BMW,5 Series,2015,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,253,263,58500,RWD
+BMW,5 Series,2016,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,254,264,59400,RWD
+BMW,5 Series,2017,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,255,265,60300,RWD
+BMW,5 Series,2018,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,256,266,61200,RWD
+BMW,5 Series,2019,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,257,267,62100,RWD
+BMW,5 Series,2020,3700,27,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,258,268,63000,RWD
+BMW,X3,2010,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,248,258,43000,AWD
+BMW,X3,2011,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,249,259,43860,AWD
+BMW,X3,2012,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,250,260,44720,AWD
+BMW,X3,2013,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,251,261,45580,AWD
+BMW,X3,2014,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,252,262,46440,AWD
+BMW,X3,2015,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,253,263,47300,AWD
+BMW,X3,2016,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,254,264,48160,AWD
+BMW,X3,2017,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,255,265,49020,AWD
+BMW,X3,2018,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,256,266,49880,AWD
+BMW,X3,2019,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,257,267,50740,AWD
+BMW,X3,2020,3900,25,115,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,258,268,51600,AWD
+BMW,X5,2010,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,335,330,60000,AWD
+BMW,X5,2011,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,336,331,61200,AWD
+BMW,X5,2012,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,337,332,62400,AWD
+BMW,X5,2013,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,338,333,63600,AWD
+BMW,X5,2014,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,339,334,64800,AWD
+BMW,X5,2015,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,340,335,66000,AWD
+BMW,X5,2016,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,341,336,67200,AWD
+BMW,X5,2017,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,342,337,68400,AWD
+BMW,X5,2018,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,343,338,69600,AWD
+BMW,X5,2019,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,344,339,70800,AWD
+BMW,X5,2020,4800,21,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,345,340,72000,AWD
+BMW,Z4,2010,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,255,269,50000,RWD
+BMW,Z4,2011,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,256,270,50800,RWD
+BMW,Z4,2012,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,257,271,51600,RWD
+BMW,Z4,2013,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,258,272,52400,RWD
+BMW,Z4,2014,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,259,273,53200,RWD
+BMW,Z4,2015,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,260,274,54000,RWD
+BMW,Z4,2016,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,261,275,54800,RWD
+BMW,Z4,2017,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,262,276,55600,RWD
+BMW,Z4,2018,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,263,277,56400,RWD
+BMW,Z4,2019,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,264,278,57200,RWD
+BMW,Z4,2020,3200,25,85,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Coupe,Performance,265,279,58000,RWD
+Mercedes,C-Class,2010,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,255,273,41000,RWD
+Mercedes,C-Class,2011,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,256,274,41820,RWD
+Mercedes,C-Class,2012,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,257,275,42640,RWD
+Mercedes,C-Class,2013,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,258,276,43460,RWD
+Mercedes,C-Class,2014,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,259,277,44280,RWD
+Mercedes,C-Class,2015,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,260,278,45100,RWD
+Mercedes,C-Class,2016,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,261,279,45920,RWD
+Mercedes,C-Class,2017,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,262,280,46740,RWD
+Mercedes,C-Class,2018,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,263,281,47560,RWD
+Mercedes,C-Class,2019,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,264,282,48380,RWD
+Mercedes,C-Class,2020,3600,27,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,265,283,49200,RWD
+Mercedes,E-Class,2010,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,241,273,54000,RWD
+Mercedes,E-Class,2011,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,242,274,54900,RWD
+Mercedes,E-Class,2012,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,243,275,55800,RWD
+Mercedes,E-Class,2013,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,244,276,56700,RWD
+Mercedes,E-Class,2014,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,245,277,57600,RWD
+Mercedes,E-Class,2015,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,246,278,58500,RWD
+Mercedes,E-Class,2016,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,247,279,59400,RWD
+Mercedes,E-Class,2017,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,248,280,60300,RWD
+Mercedes,E-Class,2018,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,249,281,61200,RWD
+Mercedes,E-Class,2019,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,250,282,62100,RWD
+Mercedes,E-Class,2020,3800,26,110,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,Sedan,Performance,251,283,63000,RWD
+Mercedes,GLC,2010,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,241,273,43000,AWD
+Mercedes,GLC,2011,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,242,274,43860,AWD
+Mercedes,GLC,2012,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,243,275,44720,AWD
+Mercedes,GLC,2013,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,244,276,45580,AWD
+Mercedes,GLC,2014,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,245,277,46440,AWD
+Mercedes,GLC,2015,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,246,278,47300,AWD
+Mercedes,GLC,2016,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,247,279,48160,AWD
+Mercedes,GLC,2017,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,248,280,49020,AWD
+Mercedes,GLC,2018,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,249,281,49880,AWD
+Mercedes,GLC,2019,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,250,282,50740,AWD
+Mercedes,GLC,2020,4000,24,120,4,18,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,251,283,51600,AWD
+Mercedes,GLE,2010,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,329,354,58000,AWD
+Mercedes,GLE,2011,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,330,355,58960,AWD
+Mercedes,GLE,2012,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,331,356,59920,AWD
+Mercedes,GLE,2013,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,332,357,60880,AWD
+Mercedes,GLE,2014,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,333,358,61840,AWD
+Mercedes,GLE,2015,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,334,359,62800,AWD
+Mercedes,GLE,2016,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,335,360,63760,AWD
+Mercedes,GLE,2017,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,336,361,64720,AWD
+Mercedes,GLE,2018,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,337,362,65680,AWD
+Mercedes,GLE,2019,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,338,363,66640,AWD
+Mercedes,GLE,2020,4900,20,130,6,20,Gasoline,Automatic,Turbocharged Inline-6,3.0,SUV,All-season,339,364,67600,AWD
+Mercedes,S-Class,2010,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,362,369,94000,AWD
+Mercedes,S-Class,2011,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,363,370,95880,AWD
+Mercedes,S-Class,2012,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,364,371,97760,AWD
+Mercedes,S-Class,2013,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,365,372,99640,AWD
+Mercedes,S-Class,2014,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,366,373,101520,AWD
+Mercedes,S-Class,2015,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,367,374,103400,AWD
+Mercedes,S-Class,2016,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,368,375,105280,AWD
+Mercedes,S-Class,2017,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,369,376,107160,AWD
+Mercedes,S-Class,2018,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,370,377,109040,AWD
+Mercedes,S-Class,2019,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,371,378,110920,AWD
+Mercedes,S-Class,2020,5000,18,115,6,19,Gasoline,Automatic,Twin-Turbo V6,3.0,Sedan,Premium,372,379,112800,AWD
+Ford,F-150,2010,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,290,265,30000,4WD
+Ford,F-150,2011,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,291,266,30600,4WD
+Ford,F-150,2012,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,292,267,31200,4WD
+Ford,F-150,2013,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,293,268,31800,4WD
+Ford,F-150,2014,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,294,269,32400,4WD
+Ford,F-150,2015,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,295,270,33000,4WD
+Ford,F-150,2016,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,296,271,33600,4WD
+Ford,F-150,2017,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,297,272,34200,4WD
+Ford,F-150,2018,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,298,273,34800,4WD
+Ford,F-150,2019,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,299,274,35400,4WD
+Ford,F-150,2020,5000,20,110,6,18,Gasoline,Automatic,V6,3.5,Truck,All-season,300,275,36000,4WD
+Ford,Fusion,2010,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,175,175,22000,FWD
+Ford,Fusion,2011,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,176,176,22440,FWD
+Ford,Fusion,2012,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,177,177,22880,FWD
+Ford,Fusion,2013,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,178,178,23320,FWD
+Ford,Fusion,2014,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,179,179,23760,FWD
+Ford,Fusion,2015,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,180,180,24200,FWD
+Ford,Fusion,2016,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,181,181,24640,FWD
+Ford,Fusion,2017,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,182,182,25080,FWD
+Ford,Fusion,2018,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,183,183,25520,FWD
+Ford,Fusion,2019,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,184,184,25960,FWD
+Ford,Fusion,2020,3300,27,105,4,17,Gasoline,Automatic,Inline-4,2.5,Sedan,All-season,185,185,26400,FWD
+Ford,Explorer,2010,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,290,255,32000,AWD
+Ford,Explorer,2011,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,291,256,32640,AWD
+Ford,Explorer,2012,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,292,257,33280,AWD
+Ford,Explorer,2013,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,293,258,33920,AWD
+Ford,Explorer,2014,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,294,259,34560,AWD
+Ford,Explorer,2015,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,295,260,35200,AWD
+Ford,Explorer,2016,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,296,261,35840,AWD
+Ford,Explorer,2017,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,297,262,36480,AWD
+Ford,Explorer,2018,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,298,263,37120,AWD
+Ford,Explorer,2019,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,299,264,37760,AWD
+Ford,Explorer,2020,4300,21,120,6,18,Gasoline,Automatic,V6,3.5,SUV,All-season,300,265,38400,AWD
+Ford,Mustang,2010,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,460,420,35000,RWD
+Ford,Mustang,2011,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,461,421,35700,RWD
+Ford,Mustang,2012,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,462,422,36400,RWD
+Ford,Mustang,2013,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,463,423,37100,RWD
+Ford,Mustang,2014,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,464,424,37800,RWD
+Ford,Mustang,2015,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,465,425,38500,RWD
+Ford,Mustang,2016,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,466,426,39200,RWD
+Ford,Mustang,2017,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,467,427,39900,RWD
+Ford,Mustang,2018,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,468,428,40600,RWD
+Ford,Mustang,2019,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,469,429,41300,RWD
+Ford,Mustang,2020,3700,22,90,8,18,Gasoline,Automatic,V8,5.0,Coupe,Performance,470,430,42000,RWD
+Ford,Escape,2010,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,180,170,24000,FWD
+Ford,Escape,2011,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,181,171,24480,FWD
+Ford,Escape,2012,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,182,172,24960,FWD
+Ford,Escape,2013,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,183,173,25440,FWD
+Ford,Escape,2014,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,184,174,25920,FWD
+Ford,Escape,2015,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,185,175,26400,FWD
+Ford,Escape,2016,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,186,176,26880,FWD
+Ford,Escape,2017,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,187,177,27360,FWD
+Ford,Escape,2018,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,188,178,27840,FWD
+Ford,Escape,2019,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,189,179,28320,FWD
+Ford,Escape,2020,3400,26,100,4,17,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,190,180,28800,FWD
+Jeep,Wrangler,2010,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,285,260,28000,4WD
+Jeep,Wrangler,2011,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,286,261,28600,4WD
+Jeep,Wrangler,2012,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,287,262,29200,4WD
+Jeep,Wrangler,2013,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,288,263,29800,4WD
+Jeep,Wrangler,2014,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,289,264,30400,4WD
+Jeep,Wrangler,2015,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,290,265,31000,4WD
+Jeep,Wrangler,2016,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,291,266,31600,4WD
+Jeep,Wrangler,2017,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,292,267,32200,4WD
+Jeep,Wrangler,2018,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,293,268,32800,4WD
+Jeep,Wrangler,2019,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,294,269,33400,4WD
+Jeep,Wrangler,2020,4000,17,95,6,17,Gasoline,Automatic,V6,3.6,SUV,Off-road,295,270,34000,4WD
+Jeep,Grand Cherokee,2010,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,295,260,35000,4WD
+Jeep,Grand Cherokee,2011,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,296,261,35700,4WD
+Jeep,Grand Cherokee,2012,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,297,262,36400,4WD
+Jeep,Grand Cherokee,2013,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,298,263,37100,4WD
+Jeep,Grand Cherokee,2014,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,299,264,37800,4WD
+Jeep,Grand Cherokee,2015,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,300,265,38500,4WD
+Jeep,Grand Cherokee,2016,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,301,266,39200,4WD
+Jeep,Grand Cherokee,2017,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,302,267,39900,4WD
+Jeep,Grand Cherokee,2018,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,303,268,40600,4WD
+Jeep,Grand Cherokee,2019,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,304,269,41300,4WD
+Jeep,Grand Cherokee,2020,4500,19,120,6,18,Gasoline,Automatic,V6,3.6,SUV,All-season,305,270,42000,4WD
+Jeep,Cherokee,2010,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,180,175,25000,AWD
+Jeep,Cherokee,2011,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,181,176,25700,AWD
+Jeep,Cherokee,2012,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,182,177,26400,AWD
+Jeep,Cherokee,2013,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,183,178,27100,AWD
+Jeep,Cherokee,2014,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,184,179,27800,AWD
+Jeep,Cherokee,2015,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,185,180,28500,AWD
+Jeep,Cherokee,2016,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,186,181,29200,AWD
+Jeep,Cherokee,2017,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,187,182,29900,AWD
+Jeep,Cherokee,2018,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,188,183,30600,AWD
+Jeep,Cherokee,2019,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,189,184,31300,AWD
+Jeep,Cherokee,2020,3500,25,105,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,190,185,32000,AWD
+Jeep,Compass,2010,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,180,175,23000,FWD
+Jeep,Compass,2011,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,181,176,23660,FWD
+Jeep,Compass,2012,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,182,177,24320,FWD
+Jeep,Compass,2013,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,183,178,24980,FWD
+Jeep,Compass,2014,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,184,179,25640,FWD
+Jeep,Compass,2015,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,185,180,26300,FWD
+Jeep,Compass,2016,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,186,181,26960,FWD
+Jeep,Compass,2017,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,187,182,27620,FWD
+Jeep,Compass,2018,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,188,183,28280,FWD
+Jeep,Compass,2019,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,189,184,28940,FWD
+Jeep,Compass,2020,3200,24,100,4,17,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,190,185,29600,FWD
+Jeep,Renegade,2010,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,180,175,22000,AWD
+Jeep,Renegade,2011,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,181,176,22620,AWD
+Jeep,Renegade,2012,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,182,177,23240,AWD
+Jeep,Renegade,2013,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,183,178,23860,AWD
+Jeep,Renegade,2014,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,184,179,24480,AWD
+Jeep,Renegade,2015,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,185,180,25100,AWD
+Jeep,Renegade,2016,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,186,181,25720,AWD
+Jeep,Renegade,2017,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,187,182,26340,AWD
+Jeep,Renegade,2018,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,188,183,26960,AWD
+Jeep,Renegade,2019,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,189,184,27580,AWD
+Jeep,Renegade,2020,3100,27,95,4,16,Gasoline,Automatic,Inline-4,2.4,SUV,All-season,190,185,28200,AWD
+Hyundai,Elantra,2010,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,147,132,19000,FWD
+Hyundai,Elantra,2011,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,148,133,19380,FWD
+Hyundai,Elantra,2012,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,149,134,19760,FWD
+Hyundai,Elantra,2013,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,150,135,20140,FWD
+Hyundai,Elantra,2014,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,151,136,20520,FWD
+Hyundai,Elantra,2015,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,152,137,20900,FWD
+Hyundai,Elantra,2016,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,153,138,21280,FWD
+Hyundai,Elantra,2017,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,154,139,21660,FWD
+Hyundai,Elantra,2018,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,155,140,22040,FWD
+Hyundai,Elantra,2019,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,156,141,22420,FWD
+Hyundai,Elantra,2020,2800,33,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,157,142,22800,FWD
+Hyundai,Sonata,2010,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,185,178,23000,FWD
+Hyundai,Sonata,2011,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,186,179,23460,FWD
+Hyundai,Sonata,2012,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,187,180,23920,FWD
+Hyundai,Sonata,2013,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,188,181,24380,FWD
+Hyundai,Sonata,2014,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,189,182,24840,FWD
+Hyundai,Sonata,2015,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,190,183,25300,FWD
+Hyundai,Sonata,2016,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,191,184,25760,FWD
+Hyundai,Sonata,2017,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,192,185,26220,FWD
+Hyundai,Sonata,2018,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,193,186,26680,FWD
+Hyundai,Sonata,2019,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,194,187,27140,FWD
+Hyundai,Sonata,2020,3200,28,105,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.4,Sedan,All-season,195,188,27600,FWD
+Hyundai,Santa Fe,2010,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,290,252,27000,AWD
+Hyundai,Santa Fe,2011,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,291,253,27540,AWD
+Hyundai,Santa Fe,2012,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,292,254,28080,AWD
+Hyundai,Santa Fe,2013,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,293,255,28620,AWD
+Hyundai,Santa Fe,2014,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,294,256,29160,AWD
+Hyundai,Santa Fe,2015,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,295,257,29700,AWD
+Hyundai,Santa Fe,2016,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,296,258,30240,AWD
+Hyundai,Santa Fe,2017,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,297,259,30780,AWD
+Hyundai,Santa Fe,2018,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,298,260,31320,AWD
+Hyundai,Santa Fe,2019,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,299,261,31860,AWD
+Hyundai,Santa Fe,2020,3700,25,110,4,17,Gasoline,Automatic,V6,3.3,SUV,All-season,300,262,32400,AWD
+Hyundai,Tucson,2010,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,164,151,22000,AWD
+Hyundai,Tucson,2011,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,165,152,22440,AWD
+Hyundai,Tucson,2012,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,166,153,22880,AWD
+Hyundai,Tucson,2013,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,167,154,23320,AWD
+Hyundai,Tucson,2014,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,168,155,23760,AWD
+Hyundai,Tucson,2015,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,169,156,24200,AWD
+Hyundai,Tucson,2016,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,170,157,24640,AWD
+Hyundai,Tucson,2017,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,171,158,25080,AWD
+Hyundai,Tucson,2018,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,172,159,25520,AWD
+Hyundai,Tucson,2019,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,173,160,25960,AWD
+Hyundai,Tucson,2020,3200,28,100,4,16,Gasoline,Automatic,Inline-4,2.0,SUV,All-season,174,161,26400,AWD
+Hyundai,Accent,2010,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,120,113,16000,FWD
+Hyundai,Accent,2011,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,121,114,16320,FWD
+Hyundai,Accent,2012,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,122,115,16640,FWD
+Hyundai,Accent,2013,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,123,116,16960,FWD
+Hyundai,Accent,2014,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,124,117,17280,FWD
+Hyundai,Accent,2015,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,125,118,17600,FWD
+Hyundai,Accent,2016,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,126,119,17920,FWD
+Hyundai,Accent,2017,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,127,120,18240,FWD
+Hyundai,Accent,2018,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,128,121,18560,FWD
+Hyundai,Accent,2019,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,129,122,18880,FWD
+Hyundai,Accent,2020,2600,33,90,4,15,Gasoline,Automatic,Inline-4,1.6,Sedan,All-season,130,123,19200,FWD
+Kia,Optima,2010,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,185,178,22000,FWD
+Kia,Optima,2011,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,186,179,22440,FWD
+Kia,Optima,2012,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,187,180,22880,FWD
+Kia,Optima,2013,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,188,181,23320,FWD
+Kia,Optima,2014,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,189,182,23760,FWD
+Kia,Optima,2015,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,190,183,24200,FWD
+Kia,Optima,2016,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,191,184,24640,FWD
+Kia,Optima,2017,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,192,185,25080,FWD
+Kia,Optima,2018,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,193,186,25520,FWD
+Kia,Optima,2019,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,194,187,25960,FWD
+Kia,Optima,2020,3200,27,105,4,17,Gasoline,Automatic,Inline-4,2.4,Sedan,All-season,195,188,26400,FWD
+Kia,Soul,2010,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,147,132,17000,FWD
+Kia,Soul,2011,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,148,133,17340,FWD
+Kia,Soul,2012,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,149,134,17680,FWD
+Kia,Soul,2013,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,150,135,18020,FWD
+Kia,Soul,2014,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,151,136,18360,FWD
+Kia,Soul,2015,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,152,137,18700,FWD
+Kia,Soul,2016,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,153,138,19040,FWD
+Kia,Soul,2017,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,154,139,19380,FWD
+Kia,Soul,2018,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,155,140,19720,FWD
+Kia,Soul,2019,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,156,141,20060,FWD
+Kia,Soul,2020,2800,30,90,4,16,Gasoline,Automatic,Inline-4,2.0,Subcompact,All-season,157,142,20400,FWD
+Kia,Sorento,2010,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,290,252,28000,FWD
+Kia,Sorento,2011,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,291,253,28600,FWD
+Kia,Sorento,2012,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,292,254,29200,FWD
+Kia,Sorento,2013,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,293,255,29800,FWD
+Kia,Sorento,2014,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,294,256,30400,FWD
+Kia,Sorento,2015,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,295,257,31000,FWD
+Kia,Sorento,2016,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,296,258,31600,FWD
+Kia,Sorento,2017,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,297,259,32200,FWD
+Kia,Sorento,2018,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,298,260,32800,FWD
+Kia,Sorento,2019,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,299,261,33400,FWD
+Kia,Sorento,2020,4000,24,110,6,18,Gasoline,Automatic,V6,3.3,SUV,All-season,300,262,34000,FWD
+Kia,Sportage,2010,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,181,175,24000,FWD
+Kia,Sportage,2011,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,182,176,24480,FWD
+Kia,Sportage,2012,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,183,177,24960,FWD
+Kia,Sportage,2013,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,184,178,25440,FWD
+Kia,Sportage,2014,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,185,179,25920,FWD
+Kia,Sportage,2015,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,186,180,26400,FWD
+Kia,Sportage,2016,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,187,181,26880,FWD
+Kia,Sportage,2017,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,188,182,27360,FWD
+Kia,Sportage,2018,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,189,183,27840,FWD
+Kia,Sportage,2019,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,190,184,28320,FWD
+Kia,Sportage,2020,3200,25,100,4,17,Gasoline,Automatic,Turbocharged Inline-4,2.0,SUV,All-season,191,185,28800,FWD
+Kia,Forte,2010,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,147,132,17000,FWD
+Kia,Forte,2011,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,148,133,17340,FWD
+Kia,Forte,2012,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,149,134,17680,FWD
+Kia,Forte,2013,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,150,135,18020,FWD
+Kia,Forte,2014,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,151,136,18360,FWD
+Kia,Forte,2015,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,152,137,18700,FWD
+Kia,Forte,2016,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,153,138,19040,FWD
+Kia,Forte,2017,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,154,139,19380,FWD
+Kia,Forte,2018,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,155,140,19720,FWD
+Kia,Forte,2019,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,156,141,20060,FWD
+Kia,Forte,2020,2800,31,95,4,16,Gasoline,Automatic,Inline-4,2.0,Sedan,All-season,157,142,20400,FWD
+Chevy,Silverado,2010,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,355,383,35000,4WD
+Chevy,Silverado,2011,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,356,384,35700,4WD
+Chevy,Silverado,2012,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,357,385,36400,4WD
+Chevy,Silverado,2013,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,358,386,37100,4WD
+Chevy,Silverado,2014,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,359,387,37800,4WD
+Chevy,Silverado,2015,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,360,388,38500,4WD
+Chevy,Silverado,2016,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,361,389,39200,4WD
+Chevy,Silverado,2017,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,362,390,39900,4WD
+Chevy,Silverado,2018,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,363,391,40600,4WD
+Chevy,Silverado,2019,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,364,392,41300,4WD
+Chevy,Silverado,2020,5000,18,120,8,18,Gasoline,Automatic,V8,5.3,Truck,All-season,365,393,42000,4WD
+Chevy,Malibu,2010,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,160,184,22000,FWD
+Chevy,Malibu,2011,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,161,185,22440,FWD
+Chevy,Malibu,2012,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,162,186,22880,FWD
+Chevy,Malibu,2013,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,163,187,23320,FWD
+Chevy,Malibu,2014,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,164,188,23760,FWD
+Chevy,Malibu,2015,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,165,189,24200,FWD
+Chevy,Malibu,2016,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,166,190,24640,FWD
+Chevy,Malibu,2017,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,167,191,25080,FWD
+Chevy,Malibu,2018,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,168,192,25520,FWD
+Chevy,Malibu,2019,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,169,193,25960,FWD
+Chevy,Malibu,2020,3200,29,105,4,17,Gasoline,Automatic,Inline-4,1.5,Sedan,All-season,170,194,26400,FWD
+Chevy,Equinox,2010,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,170,203,24000,AWD
+Chevy,Equinox,2011,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,171,204,24480,AWD
+Chevy,Equinox,2012,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,172,205,24960,AWD
+Chevy,Equinox,2013,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,173,206,25440,AWD
+Chevy,Equinox,2014,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,174,207,25920,AWD
+Chevy,Equinox,2015,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,175,208,26400,AWD
+Chevy,Equinox,2016,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,176,209,26880,AWD
+Chevy,Equinox,2017,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,177,210,27360,AWD
+Chevy,Equinox,2018,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,178,211,27840,AWD
+Chevy,Equinox,2019,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,179,212,28320,AWD
+Chevy,Equinox,2020,3500,26,110,4,17,Gasoline,Automatic,Inline-4,1.5,SUV,All-season,180,213,28800,AWD
+Chevy,Impala,2010,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,211,214,28000,FWD
+Chevy,Impala,2011,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,212,215,28600,FWD
+Chevy,Impala,2012,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,213,216,29200,FWD
+Chevy,Impala,2013,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,214,217,29800,FWD
+Chevy,Impala,2014,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,215,218,30400,FWD
+Chevy,Impala,2015,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,216,219,31000,FWD
+Chevy,Impala,2016,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,217,220,31600,FWD
+Chevy,Impala,2017,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,218,221,32200,FWD
+Chevy,Impala,2018,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,219,222,32800,FWD
+Chevy,Impala,2019,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,220,223,33400,FWD
+Chevy,Impala,2020,3600,22,110,6,17,Gasoline,Automatic,V6,3.6,Sedan,All-season,221,224,34000,FWD
+Chevy,Camaro,2010,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,455,455,25000,RWD
+Chevy,Camaro,2011,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,456,456,25700,RWD
+Chevy,Camaro,2012,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,457,457,26400,RWD
+Chevy,Camaro,2013,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,458,458,27100,RWD
+Chevy,Camaro,2014,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,459,459,27800,RWD
+Chevy,Camaro,2015,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,460,460,28500,RWD
+Chevy,Camaro,2016,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,461,461,29200,RWD
+Chevy,Camaro,2017,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,462,462,29900,RWD
+Chevy,Camaro,2018,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,463,463,30600,RWD
+Chevy,Camaro,2019,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,464,464,31300,RWD
+Chevy,Camaro,2020,3500,20,85,8,18,Gasoline,Automatic,V8,6.2,Coupe,Performance,465,465,32000,RWD

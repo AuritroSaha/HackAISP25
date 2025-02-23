@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horsepower Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 { text-align: center; }
+        label { font-weight: bold; }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ffc107;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover { background-color: #e0a800; }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <a href="cardicter.html" class="back-button">Go Back</a>
+    <div class="container">
+        <h2>Horsepower Predictor</h2>
+
+        <label>Upload CSV File:</label>
+        <input type="file" id="csvFileInput" accept=".csv">
+
+        <label for="model">Name:</label>
+        <select id="model" onchange="populateYearDropdown()"></select>
+
+        <label for="year">Year:</label>
+        <select id="year" onchange="autofillCarDetails()"></select>
+
+        <label>Location:</label>
+        <input type="text" id="location">
+
+        <label>Kilometers Driven:</label>
+        <input type="number" id="kilometersDriven">
+
+        <label>Fuel Type:</label>
+        <input type="text" id="fuelType">
+
+        <label>Transmission:</label>
+        <input type="text" id="transmission">
+
+        <label>Owner Type:</label>
+        <input type="text" id="ownerType">
+
+        <label>Mileage:</label>
+        <input type="text" id="mileage">
+
+        <label>Engine:</label>
+        <input type="text" id="engine">
+
+        <label>Seats:</label>
+        <input type="number" id="seats">
+
+        <label>New Price:</label>
+        <input type="text" id="newPrice">
+
+        <label>Price:</label>
+        <input type="text" id="price">
+
+        <button onclick="getPrediction()">Predict</button>
+
+        <div class="results">
+            <h3>Predicted Horsepower:</h3>
+            <p><strong><span id="horsepower_pred"></span></strong></p>
+        </div>
+    </div>
+
+    <script>
+        function getPrediction() {
+            document.getElementById("horsepower_pred").innerText = "150 hp"; // placeholder prediction
+        }
+    </script>
+</body>
+</html>
