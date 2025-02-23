@@ -3,6 +3,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
+import joblib
 
 # 1. Load the dataset
 df = pd.read_csv("Datasets/detailedFactsCarsExtended.csv")
@@ -28,7 +29,7 @@ categorical_cols = [
 preprocessor = ColumnTransformer(
     transformers=[
         ('num', StandardScaler(), numeric_cols),
-        ('cat', OneHotEncoder(), categorical_cols)
+        ('cat', OneHotEncoder(handle_unknown="ignore"), categorical_cols)
     ])
 
 # 5. Transform the feature set
@@ -73,3 +74,4 @@ predictions = model.predict(X_test)
 print("Sample predictions:", predictions[:5])
 
 model.save("dragcoeff_dlpredict.keras")
+joblib.dump(preprocessor, "dragcoeff_preprocessor.pkl")

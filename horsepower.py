@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -156,7 +156,6 @@ with tf.device("/GPU:0"):  # or omit to let TF auto-detect GPU
     model = tf.keras.Sequential([
         tf.keras.layers.Dense(128, activation='relu'),
         tf.keras.layers.BatchNormalization(),
-        tf.keras.layers.Dropout(0.2),
         tf.keras.layers.Dense(64, activation='relu'),
         tf.keras.layers.Dense(1)  # single numeric output (Power)
     ])
@@ -196,4 +195,6 @@ predictions = model.predict(X_test)
 print("First 5 predictions:", predictions[:5].ravel())
 print("First 5 actual:", y_test.iloc[:5].values)
 
+
 model.save("horsepower_dlpredict.keras")
+joblib.dump(preprocessor, "horsepower_preprocessor.pkl")

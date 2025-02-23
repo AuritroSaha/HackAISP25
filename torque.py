@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import joblib
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -147,3 +148,4 @@ print("First 5 actual:", y_test.iloc[:5].values)
 # 10) (OPTIONAL) SAVE THE MODEL
 # ----------------------------------------------------------------------
 model.save("torque_dlpredict.keras")
+joblib.dump(preprocessor, "torque_preprocessor.pkl")
